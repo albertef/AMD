@@ -1,0 +1,40 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+@mixin triangle-right($color, $size, $position) {
+  content: "";
+  position: absolute;
+  right: $position;
+  bottom: $position;
+  background: $color;
+  width: $size;
+  height: $size;
+  z-index: 99;
+  @include transform(rotate(45deg));
+}
+@mixin triangle-left($color, $size, $position) {
+  content: "";
+  position: absolute;
+  left: $position;
+  top: $position;
+  background: $color;
+  width: $size;
+  height: $size;
+  z-index: 99;
+  @include transform(rotate(45deg));
+}

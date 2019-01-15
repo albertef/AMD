@@ -7,6 +7,6 @@
         <li><a href="projects.php">Placements</a></li>
         <li><a href="projects.php">Power House</a></li>
         <li><a href="projects.php">Life@AMD</a></li>
-        <li><a href="contact.php">CONTACT</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
     </ul>
 </nav>
