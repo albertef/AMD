@@ -126,6 +126,28 @@ button {
   margin: 20px 0;
 }
 
+.form-container input[type="text"]::-webkit-input-placeholder,
+.form-container input[type="email"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #626262;
+}
+
+.form-container input[type="text"]:-ms-input-placeholder,
+.form-container input[type="email"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #626262;
+}
+
+.form-container input[type="text"]::-ms-input-placeholder,
+.form-container input[type="email"]::-ms-input-placeholder {
+  color: #626262;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder {
+  color: #626262;
+}
+
 .form-container .dropdown button,
 .form-container .dropdown.open button {
   color: #626262;

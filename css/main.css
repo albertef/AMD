@@ -126,6 +126,28 @@ button {
   margin: 20px 0;
 }
 
+.form-container input[type="text"]::-webkit-input-placeholder,
+.form-container input[type="email"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #626262;
+}
+
+.form-container input[type="text"]:-ms-input-placeholder,
+.form-container input[type="email"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #626262;
+}
+
+.form-container input[type="text"]::-ms-input-placeholder,
+.form-container input[type="email"]::-ms-input-placeholder {
+  color: #626262;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="email"]::placeholder {
+  color: #626262;
+}
+
 .form-container .dropdown button,
 .form-container .dropdown.open button {
   color: #626262;
@@ -182,6 +204,10 @@ button {
 
 section.header {
   height: 100vh;
+}
+
+.banner-form {
+  overflow: hidden;
 }
 
 .banner-form .owl-item img {
@@ -275,7 +301,7 @@ section.header {
   position: absolute;
   right: -75px;
   bottom: -75px;
-  background: #fff;
+  background: #ECECEC;
   width: 150px;
   height: 150px;
   z-index: 99;
@@ -346,5 +372,34 @@ section.header {
   color: #112f4a;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.trained-skill {
+  background: #ECECEC;
+  padding: 50px 0 30px;
+  overflow: hidden;
+}
+
+.trained-skill h3 {
+  color: #112f4a;
+  font-family: "Gotham-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  margin-left: 30px;
+  letter-spacing: -1.2px;
+}
+
+.trained-skill p {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 1.65rem;
+  margin-top: 20px;
+  margin-left: 30px;
+  line-height: 3rem;
+}
+
+.trained-skill img {
+  margin-bottom: 20px;
+  max-width: 90%;
 }
 /*# sourceMappingURL=main.css.map */

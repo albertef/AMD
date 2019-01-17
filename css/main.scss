@@ -9,6 +9,7 @@ section {
 }
 
 .banner-form {
+  overflow: hidden;
   .owl-item {
     img {
       max-height: 100vh;
@@ -21,7 +22,7 @@ section {
       list-style: none;
       display: inline-block;
       a {
-        color: $light-gray;
+        color: $medium-gray;
         font-family: "Gotham-Book", sans-serif;
         font-weight: 600;
         font-size: 12px;
@@ -65,7 +66,7 @@ section {
     background: $dark-blue;
     overflow: hidden;
     &:after {
-      @include triangle-right($white, 150px, -75px);
+      @include triangle-right($light-gray, 150px, -75px);
     }
   }
 }
@@ -119,5 +120,31 @@ section {
         }
       }
     }
+  }
+}
+
+.trained-skill {
+  background: $light-gray;
+  padding: 50px 0 30px;
+  overflow: hidden;
+  h3 {
+    color: $dark-blue;
+    font-family: "Gotham-Medium", sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    margin-left: 30px;
+    letter-spacing: -1.2px;
+  }
+  p {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.65rem;
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 3rem;
+  }
+  img {
+    margin-bottom: 20px;
+    max-width: 90%;
   }
 }
