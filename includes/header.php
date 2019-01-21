@@ -31,3 +31,4 @@
 </div>
 
 <div class="container-fluid no-padding">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 no-padding">

@@ -232,9 +232,27 @@ button {
   font-family: "Gotham-Medium", sans-serif;
 }
 
-.card-container {
-  width: 100%;
-  height: 350px;
+.footer {
+  background: #ECECEC;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-family: "Gotham-Medium", sans-serif;
+  font-size: 1.2rem;
+  color: #112f4a;
+  border-bottom: 1px solid #112f4a;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.footer .copy-right {
+  background: #b2b2b2;
+  color: #515151;
+  padding: 10px 20px;
+  font-size: .9rem;
 }
 
 section.header {

@@ -197,9 +197,23 @@ button {
   font-family: "Gotham-Medium", sans-serif;
 }
 
-
-
-.card-container {
-  width: 100%;
-  height: 350px;
+.footer {
+  background: $light-gray;
+    overflow: hidden;
+    padding: 40px 0;
+    h5 {
+      font-family: "Gotham-Medium", sans-serif;
+      font-size: 1.2rem;
+      color: $dark-blue;
+      border-bottom: 1px solid $dark-blue;
+      max-width: 90%;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    .copy-right{
+      background: $medium-gray;
+      color: $dark-gray;
+      padding: 10px 20px;
+      font-size: .9rem;
+    }
 }

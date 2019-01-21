@@ -1,17 +1,23 @@
-</div>
-<section class="container-fluid footer">
-	<div class="container">
-		<div class="col-md-6 col-sm-8 col-xs-12">
-			<span>Environmental Engineers International Pty Ltd &copy; <script>document.write(new Date().getFullYear());</script></span>
+
+	<div class="footer">
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding">
+			<h5>CONTACT US</h5>
 		</div>
-		<div class="col-md-6 col-sm-4 col-xs-12 text-right">
-			<a href="https://www.facebook.com/enviroengineersinternational" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<!-- <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
-			<a href="https://www.linkedin.com/in/eei-environmental-engineers-international-6ba072a3/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding">
+			<h5>USFUL LINKS</h5>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 no-padding">
+			<h5>SUBSCRIBE TO OUR NEWSLETTERS</h5>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 no-padding">
+			<h5>FOLLOW US</h5>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding copy-right">
+			Copyright &copy; <script>document.write(new Date().getFullYear());</script> Academy of Media and Design Ltd. All rights reserved
 		</div>
 	</div>
-</section>
-
+	</div>
+</div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
