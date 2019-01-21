@@ -12,6 +12,19 @@
 		loop: true,
 		animateOut: 'fadeOut'
 	})
+
+	$('#owl-powerhouse').owlCarousel({
+		pagination : true,
+		paginationNumbers: false,
+		items : 1, 
+		autoplay:true,
+		autoplayTimeout:5000,
+		autoPlaySpeed: 1000,
+		autoplayHoverPause:false,
+		loop: true,
+		animateOut: 'fadeOut'
+	})
+
 	$('#owl-featured-project').owlCarousel({
 		nav : true,
 		pagination : false,
