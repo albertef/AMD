@@ -369,44 +369,200 @@ section {
 
 .welcome-note {
   overflow: hidden;
-  .about-inner-left {
-    max-width: 550px;
-    margin: 80px auto;
-    h4 {
-      font-family: "Gotham-Medium", sans-serif;
-      color: $dark-blue;
-      font-size: 3.5rem;
-      margin-bottom:40px;
-    }
+}
+.about-inner-left {
+  max-width: 550px;
+  margin: 80px auto;
+  h4 {
+    font-family: "Gotham-Medium", sans-serif;
+    color: $dark-blue;
+    font-size: 3.5rem;
+    margin-bottom:40px;
+  }
+  p{
+    font-family: "Gotham-Book", sans-serif;
+    color: $dark-gray;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}
+.about-inner-right {
+  overflow: hidden;
+  &.welcome-inner-right {
+    background: $dark-blue;
+    color: $white;
+    max-width: 300px;
+    padding: 80px 40px;
+    position: relative;
+    margin-right: 105px;
+    float: right;
     p{
       font-family: "Gotham-Book", sans-serif;
-      color: $dark-gray;
+      color: $white;
       font-size: 1.5rem;
       line-height: 3rem;
       margin-bottom: 20px;
       text-align: justify;
     }
+    &:after {
+      @include triangle-right($light-gray, 150px, -75px);
+    }
+  }
+}
+
+.the-edge {
+  overflow: hidden;
+  .edge-left {
+    background: $pink;
+    min-height: 750px;
+    max-height: 750px;
+    p, h4 {
+      color: $white;
+    }
+    .awards {
+      padding: 25px 25px 5px;
+      background: $white;
+      display: inline-block;
+      img{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .edge-right {
+    background: $dark-blue;
+    min-height: 750px;
+    max-height: 750px;
+    ul {
+      padding:0;
+      li {
+        font-family: "Gotham-Book", sans-serif;
+        line-height: 3rem;
+        margin: 50px 0;
+        position: relative;
+        padding-left: 50px;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width:20px;
+          height: 5px;
+          background: $white;
+          content: "";
+        }
+      }
+    }
+  }
+  .welcome-inner-right {
+    max-width: 100%;
+    padding: 110px 40px 80px 0;
+    margin-right: 0;
+    float: none;
+    min-height: 750px;
+    max-height: 750px;
+    &:after {
+      @include triangle-right($blue, 150px, -75px);
+    }
+  }
+}
+.ceo-message{
+  overflow: hidden;
+  background: $blue;
+  .ceo-left {
+    &:before {
+      @include triangle-left($pink, 150px, -75px);
+    }
+  }
+  .welcome-inner-right {
+    max-width: 100%;
+    padding: 110px 40px 80px 0;
+    margin-right: 0;
+    float: none;
+    min-height: 750px;
+    max-height: 750px;
+    background: transparent;
+  }
+  .about-inner-left {
+    h4,p {
+      color: $white;
+    }
   }
   .about-inner-right {
-    overflow: hidden;
-    &.welcome-inner-right {
-      background: $dark-blue;
-      color: $white;
-      max-width: 300px;
-      padding: 80px 40px;
-      position: relative;
-      margin-right: 105px;
-      float: right;
-      p{
-        font-family: "Gotham-Book", sans-serif;
-        color: $white;
-        font-size: 1.5rem;
-        line-height: 3rem;
-        margin-bottom: 20px;
-        text-align: justify;
+    &.ceo-inner-right {
+      max-width: 45%;
+      margin: 170px 0 80px;
+      padding-left: 20px;
+      img {
+        max-width: 100%;
+        max-height: 260px;
+        object-fit: cover;
       }
-      &:after {
-        @include triangle-right($light-gray, 150px, -75px);
+      p {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .ceo-testimonials {
+      background: $dark-blue;
+      h5 {
+        padding: 15px;
+        color: $white;
+        text-align: right;
+        font-size: 2rem;
+        font-family: "Gotham-Light", sans-serif;
+        background:$pink;
+        display: inline-block;
+        margin: 20px 20px 0 -20px;
+        width: 100%;
+      }
+      span {
+        display: inline-block;
+        color: $white;
+        padding: 30px 20px;
+        line-height: 2.8rem;
+        margin-top: 40px;
+        position: relative;
+        font-family: "Gotham-Medium", sans-serif;
+        text-align: center;
+        font-size: 1.65rem;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            width: 25px;
+            left: 30px;
+            background: url(../img/quote-small.png) no-repeat;
+            height: 15px;
+            background-size: cover;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 25px;
+          right: 30px;
+          background: url(../img/quote-small.png) no-repeat;
+          height: 15px;
+          background-size: cover;
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+      .social-icons {
+        width: 100%;
+        background: $dark-gray;
+        padding: 10px 0;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        a{
+          color: $light-gray;
+          padding: 5px 10px;
+        }
       }
     }
   }
