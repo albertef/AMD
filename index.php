@@ -114,6 +114,23 @@
         </div>
     </div>
 
+    <div class="home-campus">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding course-cards">
+            <div class="owl-carousel owl-campus" id="owl-campus">
+                <div class="campus-item"><img src="img/campus/img1.jpg" class="img-responsive"></div>
+                <div class="campus-item"><img src="img/campus/img2.jpg" class="img-responsive"></div>
+                <div class="campus-item"><img src="img/campus/img3.jpg" class="img-responsive"></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">
+                <img src="img/home-campus-icon.png" class="img-responsive">
+                <h3>Campus Facilities</h3>
+            </div>
+        </div>
+    </div>
+
+
     <div class="home-news">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">

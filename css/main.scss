@@ -8,6 +8,10 @@ section {
   }
 }
 
+.right-container {
+  background: $light-gray;
+}
+
 .banner-form {
   overflow: hidden;
   .owl-item {
@@ -150,7 +154,7 @@ section {
 }
 .home-courses {
   overflow: hidden;
-  @include side-intro($green, 700px, $light-gray, $white, $green);
+  @include side-intro($green, 800px, $light-gray, $white, $green);
   .course-cards {
     >div {
       overflow: hidden;
@@ -185,7 +189,7 @@ section {
 
 .home-blog {
   overflow: hidden;
-  @include side-intro($card-blue, 350px, transparent, $white, $card-blue);
+  @include side-intro($card-blue, 400px, transparent, $white, $card-blue);
   .course-cards {
     >div {
       overflow: hidden;
@@ -207,7 +211,7 @@ section {
 
 .home-news {
   overflow: hidden;
-  @include side-intro($yellow, 350px, transparent, $dark-blue, $yellow);
+  @include side-intro($yellow, 400px, transparent, $dark-blue, $yellow);
   .course-cards {
     >div {
       overflow: hidden;
@@ -221,6 +225,41 @@ section {
         article{
           @include card-container($green, "../img/banner/banner2.jpg", $white);
           overflow: hidden;
+        }
+      }
+    }
+  }
+}
+.home-campus {
+  overflow: hidden;
+  @include side-intro($dark-blue, 650px, transparent, $white, $yellow);
+
+  .owl-campus{
+    max-height: 650px;
+    img {
+      height: 650px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .owl-nav{
+      bottom: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      > div {
+        padding: 15px 20px;
+        background: $white;
+        margin: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        color: $dark-blue;
+        &.owl-prev {
+          left: 0;
+        }
+        &.owl-next {
+          right: 0;
         }
       }
     }
@@ -250,6 +289,10 @@ section {
       border-top: 20px solid transparent;
       border-right: 25px solid $light-gray;;
       height: 80%;
+    }
+    img {
+      max-height: 385px;
+      object-fit: cover;
     }
   }
   .power-house-cont{
@@ -296,6 +339,75 @@ section {
       font-family: "Gotham-Book", sans-serif;
       color: $medium-gray;
       font-weight: 100;
+    }
+  }
+  .owl-nav{
+    bottom: 25px;
+    position: absolute;
+    right: 0;
+    > div {
+      display: inline;
+      padding: 15px;
+      background: $white;
+      margin-right: 10px;
+      color: $dark-blue;
+    }
+  }
+}
+
+
+.inner-banner {
+  overflow: hidden;
+  position: relative;
+  &:before {
+    @include triangle-left($white, 150px, -75px);
+  }
+  &:after {
+    @include triangle-right($light-gray, 150px, -75px);
+  }
+}
+
+.welcome-note {
+  overflow: hidden;
+  .about-inner-left {
+    max-width: 550px;
+    margin: 80px auto;
+    h4 {
+      font-family: "Gotham-Medium", sans-serif;
+      color: $dark-blue;
+      font-size: 3.5rem;
+      margin-bottom:40px;
+    }
+    p{
+      font-family: "Gotham-Book", sans-serif;
+      color: $dark-gray;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+  }
+  .about-inner-right {
+    overflow: hidden;
+    &.welcome-inner-right {
+      background: $dark-blue;
+      color: $white;
+      max-width: 300px;
+      padding: 80px 40px;
+      position: relative;
+      margin-right: 105px;
+      float: right;
+      p{
+        font-family: "Gotham-Book", sans-serif;
+        color: $white;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+      &:after {
+        @include triangle-right($light-gray, 150px, -75px);
+      }
     }
   }
 }

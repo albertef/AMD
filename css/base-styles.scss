@@ -187,33 +187,71 @@ button {
   }
 }
 
-.btn {
-  color: $dark-blue;
-  background: $white;
-  padding: 15px 20px;
-  @include border-radius(0);
-  line-height: 1rem;
-  margin-top: 20px;
-  font-family: "Gotham-Medium", sans-serif;
-}
-
 .footer {
   background: $light-gray;
     overflow: hidden;
-    padding: 40px 0;
+    padding: 40px 0 20px;
     h5 {
       font-family: "Gotham-Medium", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: $dark-blue;
       border-bottom: 1px solid $dark-blue;
       max-width: 90%;
       margin: 0 auto;
       padding-bottom: 10px;
     }
-    .copy-right{
-      background: $medium-gray;
-      color: $dark-gray;
-      padding: 10px 20px;
-      font-size: .9rem;
+    
+    p{
+      margin: 20px 0 20px 20px;
+      font-size: 1.2rem;
+      line-height: 3rem;
+      font-family: "Gotham-Light",sans-serif;
+      a{
+        font-family: "Gotham-Medium",sans-serif;
+        font-weight: 200;
+        color: $dark-gray;
+        padding: 10px 10px 10px 0;
+        margin-right: 10px;
+        min-width: 90px;
+        display: inline-block;
+        @include transition($base-speed);
+        &:hover {
+          @include transition($base-speed);
+          color: $dark-blue;
+        }
+      }
+      strong {
+        font-weight: 400;
+        font-family: "Gotham-Medium",sans-serif;
+      }
+      input[type="text"]{
+        border: 0;
+        padding: 8px 15px;
+        width: 60%;
+        float: left;
+      }
+      .btn {
+        @include btn($yellow, $dark-blue, 18px, 0, 400);
+        float: left;
+      }
+      &.social-icons {
+        margin: 10px;
+        a {
+          min-width: 0;
+          padding: 10px;
+          color: $dark-blue;
+          font-size: 2rem;
+        }
+      }
     }
+
+    
+}
+
+.copy-right{
+  background: $medium-gray;
+  color: $dark-gray;
+  padding: 20px;
+  font-size: 1.1rem;
+  overflow: hidden;
 }
