@@ -1,7 +1,7 @@
 <nav id="navbar" class="main-nav ">
     <ul class="text-center">
-        <li><a href="pages/about/index.php">About AMD</a></li>
-        <li><a href="pages/about/index.php">Courses</a></li>
+        <li><a href="about.php">About AMD</a></li>
+        <li><a href="courses.php">Courses</a></li>
         <li><a href="pages/about/index.php">Faculty</a></li>
         <li><a href="pages/about/index.php">Campus</a></li>
         <li><a href="pages/about/index.php">Placements</a></li>

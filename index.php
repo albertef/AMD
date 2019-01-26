@@ -6,7 +6,7 @@
             <?php include ("includes/banner.php"); ?>
         </div>
         <div class="home-form-container col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding text-left">
-            <ul class="second-menu">
+            <ul class="second-menu hide">
                 <li class="hide"><a>Student Login</a> |</li>    
                 <li><a href="#">AMD Blog</a> |</li>
                 <li><a href="#">Careers</a></li>

@@ -1,6 +1,7 @@
 //Basic Colors
 $gray: #706f6f;
 $light-gray: #ECECEC;
+$mild-gray: #F8F8F8;
 $medium-gray: #b2b2b2;
 $dark-gray: #515151;
 $white: #fff;
@@ -16,6 +17,11 @@ $blue: #31c1db;
 $card-blue: #0c7796;
 $card-pink: #db4f71;
 
+
+$colorKey: random(40);
+
+$colors: #0c7796, #db4f71, #71bf44, #31c1db, #fff000, #112f4a,#515151,#706f6f, #0c7796, #db4f71, #71bf44, #31c1db, #fff000, #112f4a,#515151,#706f6f, #0c7796, #db4f71, #71bf44, #31c1db, #fff000, #112f4a,#515151,#706f6f, #0c7796, #db4f71, #71bf44, #31c1db, #fff000, #112f4a,#515151,#706f6f, #0c7796, #db4f71, #71bf44, #31c1db, #fff000, #112f4a,#515151,#706f6f;
+$nth: nth($colors, $colorKey);
 
 //Transition Speeds
 $base-speed: 0.3s;

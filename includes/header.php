@@ -10,13 +10,12 @@
 
 	<link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet"> 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 <body>
 <div class="left-bar-fixed col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding">
@@ -29,6 +28,12 @@
 		<a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 	</div>
 </div>
+
+<ul class="second-menu">
+    <li class="hide"><a>Student Login</a> |</li>    
+    <li><a href="#">AMD Blog</a> |</li>
+    <li><a href="#">Careers</a></li>
+</ul>
 
 <div class="container-fluid no-padding">
     <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 no-padding right-container">

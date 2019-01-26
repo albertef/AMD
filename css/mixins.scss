@@ -97,9 +97,9 @@
     }
   }
 
-  @mixin card-container($bg, $bgimg, $fcol) {
+  @mixin card-container($bg, $bgimg, $fcol, $width) {
     width : 100%;
-    height: 400px;
+    height: $width;
     background: url($bgimg);
     background-size: cover;
     display: flex;
@@ -135,6 +135,7 @@
       border: 10px solid transparent;
       @include transition($base-speed);
     }
+    
     &:before {
       position:  absolute;
       content: "";
@@ -142,7 +143,7 @@
       height: 100%;
       top: 0;
       left: 0;
-      background: rgba($bg, .6);
+      background: rgba($bg, .7);
     }
     span{
       &.arrow {

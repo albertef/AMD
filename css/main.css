@@ -292,7 +292,34 @@ section.header {
 }
 
 .right-container {
-  background: #ECECEC;
+  background: #F8F8F8;
+}
+
+.second-menu {
+  margin: 10px 0;
+  position: absolute;
+  right: 285px;
+  z-index: 99;
+}
+
+.second-menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.second-menu li a {
+  color: #b2b2b2;
+  font-family: "Gotham-Book", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.second-menu li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
 }
 
 .banner-form {
@@ -303,30 +330,6 @@ section.header {
   max-height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.banner-form .second-menu {
-  margin: 10px 0;
-}
-
-.banner-form .second-menu li {
-  list-style: none;
-  display: inline-block;
-}
-
-.banner-form .second-menu li a {
-  color: #b2b2b2;
-  font-family: "Gotham-Book", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.banner-form .second-menu li a:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #fff;
 }
 
 .banner-form .banner-container {
@@ -621,7 +624,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(12, 119, 150, 0.6);
+  background: rgba(12, 119, 150, 0.7);
 }
 
 .home-courses .course-cards > div:nth-child(1) article span.arrow {
@@ -724,7 +727,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(219, 79, 113, 0.6);
+  background: rgba(219, 79, 113, 0.7);
 }
 
 .home-courses .course-cards > div:nth-child(2) article span.arrow {
@@ -827,7 +830,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(219, 79, 113, 0.6);
+  background: rgba(219, 79, 113, 0.7);
 }
 
 .home-courses .course-cards > div:nth-child(3) article span.arrow {
@@ -930,7 +933,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(12, 119, 150, 0.6);
+  background: rgba(12, 119, 150, 0.7);
 }
 
 .home-courses .course-cards > div:nth-child(4) article span.arrow {
@@ -1107,7 +1110,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(113, 191, 68, 0.6);
+  background: rgba(113, 191, 68, 0.7);
 }
 
 .home-blog .course-cards > div:nth-child(1) article span.arrow {
@@ -1210,7 +1213,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(219, 79, 113, 0.6);
+  background: rgba(219, 79, 113, 0.7);
 }
 
 .home-blog .course-cards > div:nth-child(2) article span.arrow {
@@ -1387,7 +1390,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(12, 119, 150, 0.6);
+  background: rgba(12, 119, 150, 0.7);
 }
 
 .home-news .course-cards > div:nth-child(1) article span.arrow {
@@ -1490,7 +1493,7 @@ section.header {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(113, 191, 68, 0.6);
+  background: rgba(113, 191, 68, 0.7);
 }
 
 .home-news .course-cards > div:nth-child(2) article span.arrow {
@@ -1766,7 +1769,7 @@ section.header {
   position: absolute;
   right: -75px;
   bottom: -75px;
-  background: #ECECEC;
+  background: #F8F8F8;
   width: 150px;
   height: 150px;
   z-index: 99;
@@ -1827,7 +1830,7 @@ section.header {
   position: absolute;
   right: -75px;
   bottom: -75px;
-  background: #ECECEC;
+  background: #F8F8F8;
   width: 150px;
   height: 150px;
   z-index: 99;
@@ -2032,5 +2035,1172 @@ section.header {
 .ceo-message .about-inner-right .ceo-testimonials .social-icons a {
   color: #ECECEC;
   padding: 5px 10px;
+}
+
+.inner-pages {
+  padding-bottom: 50px;
+  /*Courses page start*/
+  /*Courses page ends*/
+}
+
+.inner-pages h4 {
+  font-family: "Gotham-Medium", sans-serif;
+  color: #112f4a;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+}
+
+.inner-pages p {
+  font-family: "Gotham-Book", sans-serif;
+  color: #515151;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.inner-pages .about-courses {
+  overflow: hidden;
+}
+
+.inner-pages .about-courses h4 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  max-width: 75%;
+  line-height: 4.5rem;
+}
+
+.inner-pages .about-courses .course-details h5 {
+  margin: 20px 0 5px;
+  font-size: 1.65rem;
+}
+
+.inner-pages .about-courses .course-details p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.inner-pages .about-courses .course-details ul {
+  padding: 0 20px;
+}
+
+.inner-pages .about-courses .course-details ul > p {
+  margin: 10px 0 0 0;
+  font-weight: 600;
+}
+
+.inner-pages .about-courses .course-details ul li {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.inner-pages .about-courses .course-details img {
+  max-width: 60%;
+  right: 20px;
+  position: relative;
+  display: inline-block;
+  top: 15px;
+}
+
+.inner-pages .course-list {
+  overflow: hidden;
+}
+
+.inner-pages .course-list .course-list-item {
+  overflow: hidden;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb1.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(12, 119, 150, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #0c7796;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div:hover:after {
+  border: 10px solid #0c7796;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div:hover span.arrow {
+  background: #0c7796;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(1) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb2.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(219, 79, 113, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #db4f71;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div:hover:after {
+  border: 10px solid #db4f71;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div:hover span.arrow {
+  background: #db4f71;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(2) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb3.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(113, 191, 68, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #71bf44;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div:hover:after {
+  border: 10px solid #71bf44;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div:hover span.arrow {
+  background: #71bf44;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(3) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb4.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(49, 193, 219, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #31c1db;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div:hover:after {
+  border: 10px solid #31c1db;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div:hover span.arrow {
+  background: #31c1db;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(4) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb5.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 240, 0, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #fff000;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div:hover:after {
+  border: 10px solid #fff000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div:hover span.arrow {
+  background: #fff000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(5) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb6.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 47, 74, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #112f4a;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div:hover:after {
+  border: 10px solid #112f4a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div:hover span.arrow {
+  background: #112f4a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(6) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb7.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(81, 81, 81, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #515151;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div:hover:after {
+  border: 10px solid #515151;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div:hover span.arrow {
+  background: #515151;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(7) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb8.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(112, 111, 111, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #706f6f;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div:hover:after {
+  border: 10px solid #706f6f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div:hover span.arrow {
+  background: #706f6f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(8) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb9.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(12, 119, 150, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #0c7796;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div:hover:after {
+  border: 10px solid #0c7796;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div:hover span.arrow {
+  background: #0c7796;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(9) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div {
+  width: 100%;
+  height: 300px;
+  background: url("../img/course/course-thumb10.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div h4 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div h5 {
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  max-width: 85%;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 10px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(219, 79, 113, 0.7);
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div span.arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div span em {
+  font-style: normal;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #db4f71;
+  display: inline-block;
+  left: 10px;
+  top: 40px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div:hover:after {
+  border: 10px solid #db4f71;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div:hover span.arrow {
+  background: #db4f71;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .course-list .course-list-item:nth-child(10) > div:hover span.arrow em {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inner-pages .inner-right-bar {
+  width: 101%;
+  background: #112f4a;
+  overflow: hidden;
+  position: relative;
+  padding: 100px 0;
+}
+
+.inner-pages .inner-right-bar:after {
+  content: "";
+  position: absolute;
+  right: -75px;
+  bottom: -75px;
+  background: #F8F8F8;
+  width: 150px;
+  height: 150px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.inner-pages .inner-right-bar .duration-strip {
+  padding: 25px 0;
+  width: 100%;
+  background: #71bf44;
+  position: relative;
+  min-height: 12rem;
+}
+
+.inner-pages .inner-right-bar .duration-strip h1 {
+  color: #112f4a;
+  font-size: 15rem;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  margin: 0;
+  line-height: 12rem;
+  font-family: "Gotham-Book", sans-serif;
+}
+
+.inner-pages .inner-right-bar .duration-strip h2 {
+  color: #112f4a;
+  font-size: 3rem;
+  font-family: "Gotham-Black", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 110px;
+  top: -10px;
+  line-height: 2.5rem;
+}
+
+.inner-pages .inner-right-bar .duration-strip span {
+  color: #fff;
+  font-family: "Gotham-Book", sans-serif;
+  width: 160px;
+  display: inline-block;
+  position: absolute;
+  left: 120px;
+  text-align: right;
+  bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+.inner-pages .inner-right-bar .course-image {
+  text-align: center;
+}
+
+.inner-pages .inner-right-bar .course-image img {
+  max-width: 80%;
+  margin: 50px auto;
 }
 /*# sourceMappingURL=main.css.map */

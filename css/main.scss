@@ -9,7 +9,29 @@ section {
 }
 
 .right-container {
-  background: $light-gray;
+  background: $mild-gray;
+}
+
+.second-menu {
+  margin: 10px 0;
+  position: absolute;
+  right: 285px;
+  z-index: 99;
+  li {
+    list-style: none;
+    display: inline-block;
+    a {
+      color: $medium-gray;
+      font-family: "Gotham-Book", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      @include transition($base-speed);
+      &:hover {
+        @include transition($base-speed);
+        color: $white;
+      }
+    }
+  }
 }
 
 .banner-form {
@@ -20,24 +42,7 @@ section {
       object-fit: cover;
     }
   }
-  .second-menu {
-    margin: 10px 0;
-    li {
-      list-style: none;
-      display: inline-block;
-      a {
-        color: $medium-gray;
-        font-family: "Gotham-Book", sans-serif;
-        font-weight: 600;
-        font-size: 12px;
-        @include transition($base-speed);
-        &:hover {
-          @include transition($base-speed);
-          color: $white;
-        }
-      }
-    }
-  }
+  
 
   .banner-container {
     overflow: hidden;
@@ -160,25 +165,25 @@ section {
       overflow: hidden;
       &:nth-child(1){
         article{
-          @include card-container($card-blue, "../img/banner/banner1.jpg", $white);
+          @include card-container($card-blue, "../img/banner/banner1.jpg", $white, 400px);
           overflow: hidden;
         }
       }
       &:nth-child(2){
         article{
-          @include card-container($card-pink, "../img/banner/banner2.jpg", $white);
+          @include card-container($card-pink, "../img/banner/banner2.jpg", $white, 400px);
           overflow: hidden;
         }
       }
       &:nth-child(3){
         article{
-          @include card-container($card-pink, "../img/banner/banner3.jpg", $white);
+          @include card-container($card-pink, "../img/banner/banner3.jpg", $white, 400px);
           overflow: hidden;
         }
       }
       &:nth-child(4){
         article{
-          @include card-container($card-blue, "../img/banner/banner4.jpg", $white);
+          @include card-container($card-blue, "../img/banner/banner4.jpg", $white, 400px);
           overflow: hidden;
         }
       }
@@ -195,13 +200,13 @@ section {
       overflow: hidden;
       &:nth-child(1){
         article{
-          @include card-container($green, "../img/banner/banner1.jpg", $white);
+          @include card-container($green, "../img/banner/banner1.jpg", $white, 400px);
           overflow: hidden;
         }
       }
       &:nth-child(2){
         article{
-          @include card-container($card-pink, "../img/banner/banner2.jpg", $white);
+          @include card-container($card-pink, "../img/banner/banner2.jpg", $white, 400px);
           overflow: hidden;
         }
       }
@@ -217,13 +222,13 @@ section {
       overflow: hidden;
       &:nth-child(1){
         article{
-          @include card-container($card-blue, "../img/banner/banner1.jpg", $white);
+          @include card-container($card-blue, "../img/banner/banner1.jpg", $white, 400px);
           overflow: hidden;
         }
       }
       &:nth-child(2){
         article{
-          @include card-container($green, "../img/banner/banner2.jpg", $white);
+          @include card-container($green, "../img/banner/banner2.jpg", $white, 400px);
           overflow: hidden;
         }
       }
@@ -363,7 +368,7 @@ section {
     @include triangle-left($white, 150px, -75px);
   }
   &:after {
-    @include triangle-right($light-gray, 150px, -75px);
+    @include triangle-right($mild-gray, 150px, -75px);
   }
 }
 
@@ -407,7 +412,7 @@ section {
       text-align: justify;
     }
     &:after {
-      @include triangle-right($light-gray, 150px, -75px);
+      @include triangle-right($mild-gray, 150px, -75px);
     }
   }
 }
@@ -566,4 +571,139 @@ section {
       }
     }
   }
+}
+
+
+.inner-pages {
+  padding-bottom: 50px;
+  h4 {
+    font-family: "Gotham-Medium", sans-serif;
+    color: $dark-blue;
+    font-size: 3.5rem;
+    margin-bottom:40px;
+  }
+  p{
+    font-family: "Gotham-Book", sans-serif;
+    color: $dark-gray;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  /*Courses page start*/
+  .about-courses {
+    overflow: hidden;
+    
+    h4 {
+      margin-top: 50px;
+      text-transform: uppercase;
+      max-width: 75%;
+      line-height: 4.5rem;
+    }
+    .course-details {
+      h5 {
+        margin: 20px 0 5px;
+        font-size: 1.65rem;
+      }
+      p{
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+      }
+      ul {
+        padding: 0 20px;
+        > p{
+          margin: 10px 0 0 0;
+          font-weight: 600;
+        }
+        li {
+          font-family: "Gotham-Book", sans-serif;
+          font-size: 1.25rem;
+          line-height: 2.25rem;
+        }
+      }
+      img {
+        max-width: 60%;
+        right: 20px;
+        position: relative;
+        display: inline-block;
+        top: 15px;
+      }
+    }
+  }
+  .course-list {
+    overflow: hidden;
+    .course-list-item {
+      overflow: hidden;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) { 
+          >div{
+            @include card-container(nth($colors, $i), "../img/course/course-thumb#{$i}.jpg", $white, 300px);
+          } 
+        }
+      }
+
+     
+    }
+  }
+  .inner-right-bar {
+    width: 101%;
+    background: $dark-blue;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+    &:after {
+      @include triangle-right($mild-gray, 150px, -75px);
+    }
+    .duration-strip {
+      padding: 25px 0;
+      width: 100%;
+      background: $green;
+      position: relative;
+      min-height: 12rem;
+      h1 {
+        color: $dark-blue;
+        font-size: 15rem;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        margin: 0;
+        line-height: 12rem;
+        font-family: "Gotham-Book", sans-serif;
+      }
+      h2 {
+        color: $dark-blue;
+        font-size: 3rem;
+        font-family: "Gotham-Black", sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        left: 110px;
+        top: -10px;
+        line-height: 2.5rem;
+      }
+      span {
+        color: $white;
+        font-family: "Gotham-Book", sans-serif;
+        width: 160px;
+        display: inline-block;
+        position: absolute;
+        left: 120px;
+        text-align: right;
+        bottom: 15px;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+      }
+    }
+    .course-image{
+      text-align: center;
+      img {
+        max-width: 80%;
+        margin: 50px auto;
+  
+      }
+    }
+    
+  }
+  /*Courses page ends*/
 }
