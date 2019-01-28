@@ -5,6 +5,10 @@
         <?php
             $course_id = $_GET['id'];
             //echo $course_id;
+            if($course_id == "" || $course_id == NULL){
+                header("Location: courses.php");
+            }
+            else{
             $sql = "SELECT * FROM amd_courses WHERE course_id=".$course_id;
             $result = mysqli_query($conn, $sql);
 
@@ -79,13 +83,16 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1 no-padding">
-                            <div class="inner-right-bar">
+                            <div class="inner-right-bar '. $row["course_color"] .'">
                                 <div class="duration-strip">
                                     <h1>'. $row["course_duration"] .'</h1>
                                     <h2>Month Course</h2>
                                     <span>Learning sessions per day:<br>'. $row["course_session"] .'</span>
                                 </div>
                                 <div class="course-image"><img src="img/course/'. $row["course_image"] .'"/></div>
+                                <div class="contact-form">';
+                                include ("includes/form.php");
+                                echo '</div>
                             </div>
                         </div>
                     </div>';
@@ -94,6 +101,7 @@
             else {
                 header("Location: courses.php");
             }
+        }
         ?>
 
         
