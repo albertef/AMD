@@ -906,5 +906,84 @@ section {
     }
   }
   /*Faculty page end*/
+
+  /* Campus page start */
+  .owl-campus-inner{
+    margin-top: 60px;
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+    p {
+      color: $dark-blue;
+      line-height: 2rem;
+    }
+    .owl-nav{
+      bottom: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      > div {
+        padding: 15px 20px;
+        background: $pink;
+        margin: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        color: $white;
+        &.owl-prev {
+          left: -35px;
+        }
+        &.owl-next {
+          right: -35px;
+        }
+      }
+    }
+  }
+
+  .campus-list {
+    padding-bottom: 150px;
+    max-width: 80%;
+    margin: 0 auto;
+    h5 {
+      color: $white;
+      text-transform: uppercase;
+      font-family: "Gotham-Medium", sans-serif;
+      font-size: 1.85rem;
+      line-height: 3rem;
+    }
+    ul {
+      margin-top: 30px;
+      padding: 0;
+      li {
+        list-style: none;
+        font-family: "Gotham-Book", sans-serif;
+        color: $white;
+        margin: 10px 0 10px 5px;
+        position: relative;
+        padding-left: 40px;
+        &:before {
+          width: 10px;
+          height: 1px;
+          background: $white;
+          position: absolute;
+          left: 0;
+          top: 10px;
+          content:"";
+        }
+      }
+    }
+  }
+  /* Campus page end*/
+
+  /* Placements page start*/
+  .placement-logos {
+    img {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+    }
+  }
+  /* Placements page end*/
 }
 

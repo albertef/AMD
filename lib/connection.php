@@ -5,8 +5,8 @@
     $username = "root";
     $password = "";
 
-    // $username = "eei_user";
-    // $password = "eei_password@123";
+    // $username = "amd_user";
+    // $password = "amd_pass_2019";
     
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     

@@ -2043,6 +2043,10 @@ section.header {
   /*Courses page ends*/
   /*Faculty page start*/
   /*Faculty page end*/
+  /* Campus page start */
+  /* Campus page end*/
+  /* Placements page start*/
+  /* Placements page end*/
 }
 
 .inner-pages h4 {
@@ -3528,5 +3532,89 @@ section.header {
 
 .inner-pages .mentor-desc.blue h5 {
   background: #31c1db;
+}
+
+.inner-pages .owl-campus-inner {
+  margin-top: 60px;
+}
+
+.inner-pages .owl-campus-inner img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inner-pages .owl-campus-inner p {
+  color: #112f4a;
+  line-height: 2rem;
+}
+
+.inner-pages .owl-campus-inner .owl-nav {
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.inner-pages .owl-campus-inner .owl-nav > div {
+  padding: 15px 20px;
+  background: #db4f71;
+  margin: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  color: #fff;
+}
+
+.inner-pages .owl-campus-inner .owl-nav > div.owl-prev {
+  left: -35px;
+}
+
+.inner-pages .owl-campus-inner .owl-nav > div.owl-next {
+  right: -35px;
+}
+
+.inner-pages .campus-list {
+  padding-bottom: 150px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.inner-pages .campus-list h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Gotham-Medium", sans-serif;
+  font-size: 1.85rem;
+  line-height: 3rem;
+}
+
+.inner-pages .campus-list ul {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.inner-pages .campus-list ul li {
+  list-style: none;
+  font-family: "Gotham-Book", sans-serif;
+  color: #fff;
+  margin: 10px 0 10px 5px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.inner-pages .campus-list ul li:before {
+  width: 10px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: "";
+}
+
+.inner-pages .placement-logos img {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
 }
 /*# sourceMappingURL=main.css.map */

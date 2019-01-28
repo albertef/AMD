@@ -40,6 +40,20 @@
     navText: ["&larr;", "&rarr;"]
   });
 
+  $("#owl-campus-inner").owlCarousel({
+    pagination: true,
+    paginationNumbers: false,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoPlaySpeed: 1000,
+    autoplayHoverPause: true,
+    loop: true,
+    animateOut: "fadeOut",
+    nav: true,
+    navText: ["&larr;", "&rarr;"]
+  });
+
 
   $("#owl-clients").owlCarousel({
     nav: true,
