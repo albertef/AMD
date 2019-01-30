@@ -2047,6 +2047,10 @@ section.header {
   /* Campus page end*/
   /* Placements page start*/
   /* Placements page end*/
+  /*Powerhouse page start*/
+  /*Powerhouse page end*/
+  /* Contact page start*/
+  /* Contact page start*/
 }
 
 .inner-pages h4 {
@@ -3143,6 +3147,7 @@ section.header {
   overflow: hidden;
   position: relative;
   padding: 100px 0 0;
+  z-index: 99;
 }
 
 .inner-pages .inner-right-bar:after {
@@ -3616,5 +3621,186 @@ section.header {
 .inner-pages .placement-logos img {
   display: inline-block;
   margin: 5px 10px 5px 0;
+}
+
+.inner-pages .powerhouse-list {
+  margin: 70px 0px 80px;
+  padding-left: 20px;
+}
+
+.inner-pages .powerhouse-list .powerhouse-list-item {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.inner-pages .powerhouse-list .powerhouse-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-pages .powerhouse-list .powerhouse-image:before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  background: #F8F8F8;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.inner-pages .powerhouse-list .powerhouse-image img {
+  width: 100%;
+  max-height: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.inner-pages .powerhouse-list p:first-child {
+  margin-bottom: 0;
+}
+
+.inner-pages .powerhouse-desc {
+  background: #112f4a;
+  max-height: 400px;
+  height: 400px;
+}
+
+.inner-pages .powerhouse-desc h5 {
+  padding: 15px 25px;
+  color: #fff;
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Gotham-Medium", sans-serif;
+  background: #db4f71;
+  display: inline-block;
+  margin: 20px 20px 0 -20px;
+  width: auto;
+  text-transform: uppercase;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+.inner-pages .powerhouse-desc h5 span {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 1rem;
+  display: block;
+}
+
+.inner-pages .powerhouse-desc span.desc {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  line-height: 2.8rem;
+  margin-top: 20px;
+  position: relative;
+  font-family: "Gotham-Book", sans-serif;
+  text-align: left;
+  font-size: 1.2rem;
+  min-height: 250px;
+  overflow-y: auto;
+  max-height: 250px;
+  width: 98%;
+}
+
+.inner-pages .powerhouse-desc.green h5 {
+  background: #71bf44;
+}
+
+.inner-pages .powerhouse-desc.pink h5 {
+  background: #db4f71;
+}
+
+.inner-pages .powerhouse-desc.blue h5 {
+  background: #31c1db;
+}
+
+.inner-pages .contact-address {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.inner-pages .contact-address:first-child {
+  margin-top: 80px;
+}
+
+.inner-pages .contact-address h5 {
+  text-transform: uppercase;
+  color: #112f4a;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.inner-pages .contact-address h6 {
+  text-transform: uppercase;
+  color: #112f4a;
+  font-size: 1.2rem;
+}
+
+.inner-pages .contact-address p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.inner-pages .contact-address p strong {
+  color: #112f4a;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.inner-pages .contact-address img {
+  max-width: 25px;
+}
+
+.inner-pages .contact-map {
+  position: relative;
+  margin-top: -120px;
+  z-index: 0;
+}
+
+.inner-pages .contact-right-bar {
+  overflow: visible;
+  padding-top: 50px;
+}
+
+.inner-pages .contact-right-bar .contact-form {
+  padding-bottom: 50px;
+}
+
+.inner-pages .contact-right-bar .contact-form .form-container img {
+  float: left;
+}
+
+.inner-pages .contact-right-bar .contact-form .form-container .form-send {
+  color: #112f4a;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.inner-pages .contact-right-bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: transparent;
+  width: 100%;
+  height: 150px;
+  z-index: 99;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+  border-right: 150px solid transparent;
+  border-top: 150px solid #112f4a;
 }
 /*# sourceMappingURL=main.css.map */
