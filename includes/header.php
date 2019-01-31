@@ -32,7 +32,7 @@
 <ul class="second-menu">
     <li class="hide"><a>Student Login</a> |</li>    
     <li><a href="#">AMD Blog</a> |</li>
-    <li><a href="#">Careers</a></li>
+    <li><a href="career.php">Careers</a></li>
 </ul>
 
 <div class="container-fluid no-padding">

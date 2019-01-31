@@ -953,6 +953,9 @@ section {
       font-family: "Gotham-Medium", sans-serif;
       font-size: 1.85rem;
       line-height: 3rem;
+      &.yellow {
+        color: $yellow;
+      }
     }
     ul {
       margin-top: 30px;

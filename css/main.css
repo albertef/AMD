@@ -3594,6 +3594,10 @@ section.header {
   line-height: 3rem;
 }
 
+.inner-pages .campus-list h5.yellow {
+  color: #fff000;
+}
+
 .inner-pages .campus-list ul {
   margin-top: 30px;
   padding: 0;
