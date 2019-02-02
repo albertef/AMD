@@ -5,6 +5,7 @@
         <img src="img/inner-banners/about-banner.jpg" class="img-responsive">
     </div>
 
+<div class="about-courses">
     <div class="welcome-note">
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 no-padding">
             <div class="about-inner-left">
@@ -15,7 +16,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-padding">
-            <div class="about-inner-right welcome-inner-right">
+            <div class="about-inner-right welcome-inner-right message">
                 <p>We at AMD focus on a single subject: preparing aspiring designers with the skill set and certification for promising careers. Courses and curriculums at AMD have been curated in a manner that allows potential graduates to master skills that enhance the innovative and creative capacity of the individual courses.</p>
             </div>
         </div>
@@ -25,7 +26,7 @@
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 no-padding edge-left">
             <div class="about-inner-left">
                 <h4>THE EDGE</h4>
-                <P>The workplace demands for digital media skills, using Adobe’s video, graphic, web or design software is on the rise. At AMD you’ll have the opportunity to build and polish an outstanding set of skills ready to compete for creative jobs with the help of Adobe certifications that help educators effectively teach and validate digital communications skills while providing students and creative professionals with valuable career credentials.</P>
+                <P>The workplace demands for digital media skills, using Adobe's video, graphic, web or design software is on the rise. At AMD you'll have the opportunity to build and polish an outstanding set of skills ready to compete for creative jobs with the help of Adobe certifications that help educators effectively teach and validate digital communications skills while providing students and creative professionals with valuable career credentials.</P>
 
                 <p>
                     <span class="awards">
@@ -36,7 +37,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 no-padding edge-right">
-            <div class="about-inner-right welcome-inner-right">
+            <div class="about-inner-right welcome-inner-right list">
                 <p>
                     <ul>
                         <li>Adobe certification is the absolute best way to communicate your proficiency in Adobe products.</li>
@@ -50,16 +51,16 @@
     </div>
 
     <div class="ceo-message">
-        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 no-padding ceo-left">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 no-padding ceo-left message">
             <div class="about-inner-left">
                 <h4>CEO'S MESSAGE</h4>
-                <P>The creative industries are one of the fastest growing sectors of the national and worldwide economy. Every year the demand for talent increases. The ability to think, to collaborate and to innovate will be key to building a solid foundation for a strong career. The workplace of the future will look different from what it seems today. The ability to build a ‘creative bridge’ between traditional and currently trending design will be highly valued.</P>
+                <P>The creative industries are one of the fastest growing sectors of the national and worldwide economy. Every year the demand for talent increases. The ability to think, to collaborate and to innovate will be key to building a solid foundation for a strong career. The workplace of the future will look different from what it seems today. The ability to build a 'creative bridge' between traditional and currently trending design will be highly valued.</P>
 
                 <P>Here at AMD, we believe that your time at the institution is the start of your career. Your own career prospects will be greatly enhanced under expert tuition and by making use of industry standard resources.</P>
 
                 <P>Our ambition is to deliver world-class education, with industry-focused courses, amazing facilities and academic staff and to build an institution that recognizes creativity as the most valuable skill and talent for the future.</P>
 
-                <P>Our mission is simple – to help you get a great job in the creative industry. We have a new beginning ahead of us; no one stands still – everyone looks forward. This is what will make AMD stand out from the crowd.</P>
+                <P>Our mission is simple - to help you get a great job in the creative industry. We have a new beginning ahead of us; no one stands still - everyone looks forward. This is what will make AMD stand out from the crowd.</P>
 
             </div>
         </div>
@@ -86,6 +87,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
 

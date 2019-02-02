@@ -82,13 +82,29 @@
 
 
 
-  $(".tab-list-cont li").on("click", function () {
-    var id = $(this).attr("id");
-    $(".tab-list-cont li").removeClass("active");
-    $(this).addClass("active");
-    $(".tab-content").hide();
-    $("#" + id + "-content").fadeIn();
+  $(".fa-bars").on("click", function () {
+    $(".main-nav").toggleClass("active");
+    $(".overlay").toggleClass("active");
+    $(this).toggleClass("open");
+    if ($(".overlay").hasClass("active")) {
+      $("body").addClass("no-scroll");
+    }
+    else {
+      $("body").removeClass("no-scroll");
+    }
   });
+
+  $(".modal-header .close").on("click", function () {
+    $(".modal").removeClass("in");
+    $(".modal").fadeOut(500);
+    window.location.assign(window.location.pathname);
+  });
+
+  $(".home-form-container .dropdown li a").on("click", function () {
+    $(this).parents("ul").siblings("button")[0].innerHTML = $(this)[0].innerText + ' <span class="caret"></span>';
+    $(this).parents("ul").siblings("input")[0].value = $(this)[0].innerText;
+  });
+
 
   $(".panel-body a").on("click", function () {
     $(this)

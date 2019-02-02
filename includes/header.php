@@ -18,8 +18,8 @@
 	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 <body>
-<div class="left-bar-fixed col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding">
-	<img src="img/logo.png" class="img-responsive logo">
+<div class="left-bar-fixed col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding desktop">
+<a href="index.php"><img src="img/logo.png" class="img-responsive logo"></a>
 	<?php include ("nav.php"); ?>
 	<div class="social-icons text-center">
 		<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -28,6 +28,19 @@
 		<a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 	</div>
 </div>
+
+<div class="left-bar-fixed col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding mobile site-header">
+    <a href="index.php"><img src="img/logo.png" class="img-responsive logo"></a>
+    <a class="fa-bars">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </a>
+    
+	<?php include ("nav.php"); ?>
+</div>
+
+<div class="overlay"></div>
 
 <ul class="second-menu">
     <li class="hide"><a>Student Login</a> |</li>    

@@ -58,6 +58,22 @@ a {
     text-decoration: none;
   }
 }
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 800;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.no-scroll {
+  overflow: hidden !important;
+}
 .form-control {
   &:focus {
     box-shadow: 0 0 0 0 transparent;
@@ -140,11 +156,12 @@ button {
       padding: 15px 15px;
       max-width: 365px;
       background: transparent;
-      line-height: 1rem;
+      line-height: 2rem;
       margin: 2px 0;
       width: 100%;
       text-align: left;
       position: relative;
+      white-space: normal;
       span {
         &.caret {
           position: absolute;
@@ -164,8 +181,10 @@ button {
         a {
           color: $white;
           font-family: "Gotham-Light", sans-serif;
-          font-weight: 600 !important;
+          font-weight: 500 !important;
           padding: 5px;
+          white-space: normal;
+          font-size: 1rem;
           @include transition($base-speed);
           &:hover {
             background: rgba($form-gray, 0.5);
@@ -206,6 +225,7 @@ button {
       font-size: 1.2rem;
       line-height: 3rem;
       font-family: "Gotham-Light",sans-serif;
+      
       a{
         font-family: "Gotham-Medium",sans-serif;
         font-weight: 200;
@@ -224,7 +244,7 @@ button {
         font-weight: 400;
         font-family: "Gotham-Medium",sans-serif;
       }
-      input[type="text"]{
+      input[type="email"]{
         border: 0;
         padding: 8px 15px;
         width: 60%;
@@ -244,7 +264,14 @@ button {
         }
       }
     }
-
+    .subscribe {
+      p{
+        margin: 20px;
+        .btn {
+          padding: 18px 15px !important;
+        }
+      }
+    }
     
 }
 
@@ -254,4 +281,217 @@ button {
   padding: 20px;
   font-size: 1.1rem;
   overflow: hidden;
+}
+
+.modal {
+  background: rgba(0,0,0,0.8);
+  display: block;
+  width: 100%;
+  .modal-dialog {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    .modal-content {
+      border-radius: 0;
+      background: $dark-blue;
+      color: $white;
+      .modal-body {
+        p{
+          color: $white;
+        }
+      }
+      .modal-header {
+        border-bottom: 0;
+        h4 {
+          margin-top: 20px;
+          line-height: 3rem;
+          color: $white;
+          max-width: 100%;
+          margin-bottom: 0;
+          padding-left: 5px;
+          font-size: 3rem;
+        }
+        button {
+          position: absolute;
+          top: -29px;
+          right: 0;
+          background: $yellow;
+          color: $dark-blue;
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+      }
+    }
+    
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile {
+    display: inline-block;
+    
+    &.site-header {
+      position: relative;
+      height: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      img {
+        float: left;
+        max-width: 40%;
+        margin: 15px 0;
+      }
+      .main-nav {
+        position: fixed;
+        top: 0;
+        right: -80%;
+        height: 100vh;
+        width: 80%;
+        z-index: 900;
+        background: $white;
+        padding-top: 100px;
+        margin-top: 0;
+        @include transition($base-speed);
+        &.active {
+          right: 0;
+          @include transition($base-speed);
+        }
+        li {
+          margin: 15px 0;
+        }
+      }
+      .fa-bars {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        color: $dark-blue;
+        display: inline-block;
+        z-index: 999;
+        width: 10%;
+        background: $white;
+        padding: 15px 10px;
+        box-sizing: content-box;
+        @include transition($base-speed);
+        span {
+          width: 30px;
+          height: 3px;
+          background: $dark-blue;
+          margin: 3px;
+          display: block;
+          float: left;
+        }
+        &:before {
+          display: none;
+        }
+        &.open {
+          right: 80%;
+          min-height: 30px;
+          @include transition($base-speed);
+          span {
+            @include transition($base-speed);
+            position: absolute;
+            top: 42%;
+            &.middle {
+              opacity: 0;
+              visibility: hidden;
+            }
+            &.top {
+              @include transform(rotate(45deg));
+            }
+            &.bottom {
+              @include transform(rotate(-45deg));
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-courses {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .second-menu {
+    position: relative !important;
+    right: 15px !important;
+    text-align: right;
+    overflow: hidden;
+  }
+  .inner-banner {
+    img {
+      min-height: 220px;
+      object-fit: cover;
+      object-position: 20%;
+    }
+  }
+  .desktop {
+    display: none;
+  }
+
+  .about-inner-left {
+    margin-bottom :40px !important;
+  }
+  .about-inner-right.welcome-inner-right{
+    &.message {
+      max-width: 100% !important;
+      padding: 50px 40px !important;
+      margin-right: 0 !important;
+      float: none !important;
+      &:after {
+        @include triangle-right($pink, 200px, -100px);
+      }
+    }
+    &.list {
+      padding: 30px 40px 80px 0 !important;
+      &:before {
+        @include triangle-left($pink, 200px, -100px);
+      }
+    }
+  }
+  .edge-left {
+    padding: 0 15px;
+  }
+  .ceo-message{
+    .ceo-left {
+      padding: 0 15px;
+      &.message {
+        &:before {
+          @include triangle-left($dark-blue, 200px, -100px);
+        }
+      }
+    }
+    .ceo-right {
+      .ceo-inner-right {
+        max-width: 94% !important;
+        margin: 30px 0 80px !important;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .subscribe {
+      margin-bottom: 40px;
+      p{
+        margin: 20px;
+        input, .btn {
+          width: 100% !important;
+          box-sizing: border-box;
+          outline: 0;
+        }
+      }
+    }
+}
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: inline-block;
+  }
 }

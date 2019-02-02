@@ -26,6 +26,14 @@
   height: $size;
   z-index: 99;
   @include transform(rotate(45deg));
+
+  @media only screen and (max-width: 768px) {
+    background: $color !important;
+    right: $position/3;
+    bottom: $position/3;
+    width: $size/3;
+    height: $size/3;
+  }
 }
 @mixin triangle-left($color, $size, $position) {
   content: "";
@@ -37,6 +45,14 @@
   height: $size;
   z-index: 99;
   @include transform(rotate(45deg));
+
+  @media only screen and (max-width: 768px) {
+    background: $color !important;
+    left: $position/3;
+    top: $position/3;
+    width: $size/3;
+    height: $size/3;
+  }
 }
 
 @mixin placeholder($value) {

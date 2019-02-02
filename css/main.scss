@@ -1145,3 +1145,12 @@ section {
   /* Contact page start*/
 }
 
+
+@media only screen and (max-width: 768px) {
+  .banner-form {
+    .home-form-container {
+      height: auto;
+      padding-bottom: 40px;
+    }
+  }
+}
