@@ -56,7 +56,7 @@
         //error_reporting(E_ALL ^ E_NOTICE);
         if(isset($_POST['newsletterBtn']))
         {
-		  $email=$_POST['newsEmail'];
+		  $email=trim(mysqli_real_escape_string($conn, $_POST['newsEmail']));
 
 			$sql = 'SELECT * FROM amd_newsletter WHERE newsletter_email = "'.$email.'"';
 			$result = mysqli_query($conn, $sql);
@@ -158,5 +158,20 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c56f5857cf662208c93d9d8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 </body>
 </html>

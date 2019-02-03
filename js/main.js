@@ -17,7 +17,7 @@
     paginationNumbers: false,
     items: 1,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 5000,
     autoPlaySpeed: 1000,
     autoplayHoverPause: true,
     loop: true,
@@ -100,7 +100,7 @@
     window.location.assign(window.location.pathname);
   });
 
-  $(".home-form-container .dropdown li a").on("click", function () {
+  $(".dropdown li a").on("click", function () {
     $(this).parents("ul").siblings("button")[0].innerHTML = $(this)[0].innerText + ' <span class="caret"></span>';
     $(this).parents("ul").siblings("input")[0].value = $(this)[0].innerText;
   });

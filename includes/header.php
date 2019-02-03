@@ -1,4 +1,7 @@
-<?php include "lib/connection.php" ?>
+<?php 
+    include "lib/connection.php";
+    $activePage = basename($_SERVER['PHP_SELF'], ".php");
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,7 +45,7 @@
 
 <div class="overlay"></div>
 
-<ul class="second-menu">
+<ul class="second-menu hide">
     <li class="hide"><a>Student Login</a> |</li>    
     <li><a href="#">AMD Blog</a> |</li>
     <li><a href="career.php">Careers</a></li>

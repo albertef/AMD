@@ -27,11 +27,11 @@
                     $result = mysqli_query($conn, $sql);
                     if (mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
-                            echo '<li><a href="#" title="'.$row["course_name"].'">'.$row["course_name"].'</a></li>';
+                            echo '<li><a href="javascript:void(0);" title="'.$row["course_name"].'">'.$row["course_name"].'</a></li>';
                         }
                     }
                     else {
-                        echo '<li><a href="#">No Courses Available</a></li>';
+                        echo '<li><a href="javascript:void(0);">No Courses Available</a></li>';
                     }
                 ?>
                 </ul>
@@ -47,10 +47,10 @@
         //error_reporting(E_ALL ^ E_NOTICE);
         if(isset($_POST['submit-enquiry']))
         {
-          $name=$_POST['name'];
-          $email=$_POST['email'];
-          $phone=$_POST['phone'];
-          $course=$_POST['course'];
+          $name=trim(mysqli_real_escape_string($conn, $_POST['name']));
+          $email=trim(mysqli_real_escape_string($conn, $_POST['email']));
+          $phone=trim(mysqli_real_escape_string($conn, $_POST['phone']));
+          $course=trim(mysqli_real_escape_string($conn, $_POST['course']));
 
           $message ="<table width=80%  border=0 cellspacing=0 cellpadding=0 style='background:#FFF; border: 1px solid #112f4a; margin: 0 auto;'>
           <tr>

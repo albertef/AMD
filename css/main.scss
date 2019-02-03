@@ -121,9 +121,10 @@ section {
           outline: 0;
           @include transition($base-speed);
           &:hover,
-          &:active {
+          &:active,&.active {
             text-decoration: none;
             color: $dark-blue;
+            font-weight: 600;
             @include transition($base-speed);
           }
         }
@@ -163,30 +164,17 @@ section {
   .course-cards {
     >div {
       overflow: hidden;
-      &:nth-child(1){
-        article{
-          @include card-container($card-blue, "../img/banner/banner1.jpg", $white, 400px);
-          overflow: hidden;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) { 
+          article{
+            @include card-container(nth($colors, $i), "../img/course/course-thumb#{$i}.jpg", $white, 400px);
+            overflow: hidden;
+          } 
         }
       }
-      &:nth-child(2){
-        article{
-          @include card-container($card-pink, "../img/banner/banner2.jpg", $white, 400px);
-          overflow: hidden;
-        }
-      }
-      &:nth-child(3){
-        article{
-          @include card-container($card-pink, "../img/banner/banner3.jpg", $white, 400px);
-          overflow: hidden;
-        }
-      }
-      &:nth-child(4){
-        article{
-          @include card-container($card-blue, "../img/banner/banner4.jpg", $white, 400px);
-          overflow: hidden;
-        }
-      }
+
+      
     }
     
   }
@@ -339,6 +327,8 @@ section {
       letter-spacing: -0.5px;
       width: 80%;
       margin-top: 30px;
+      max-height: 110px;
+      overflow: auto;
     }
     h6 {
       font-family: "Gotham-Book", sans-serif;
@@ -644,7 +634,6 @@ section {
         }
       }
 
-     
     }
   }
   .inner-right-bar {
@@ -1151,6 +1140,109 @@ section {
     .home-form-container {
       height: auto;
       padding-bottom: 40px;
+      .form-container{
+        margin-top: 50px;
+        width: 80%;
+      }
+    }
+  }
+  .trained-skill {
+    h3 {
+      margin-left: 0;
+    }
+    p {
+      margin-left: 0;
+      br {
+        display: none;
+      }
+    }
+  }
+  .home-courses {
+    .name-cont {
+      height: 500px !important;
+      p{
+        max-width: 100%;
+      }
+    }
+  }
+  .home-powerhouse {
+    max-height: none;
+    .power-house-cont {
+      height: auto;
+      padding-bottom: 130px;
+      h3 {
+        margin-top: 0;
+        margin-bottom: 100px;
+      }
+      p{
+        width: 100%;
+        max-height: 200px;
+        overflow: auto;
+      }
+      &:before {
+        top: 90px;
+        width: 60px;
+        left: 20px;
+        height: 60px;
+        @include transform(rotateY(180deg));
+      }
+      &:after {
+        bottom: 75px;
+        width: 60px;
+        right: 20px;
+        left: auto;
+        height: 60px;
+        @include transform(rotateY(0deg));
+      }
+    }
+    .power-house-img{
+      &:before {
+        right: 0;
+        bottom: 0;
+        top: auto;
+        width: 80%;
+        height: 25px;
+        border-left: 20px solid transparent;
+        border-bottom: 25px solid #ECECEC;
+      }
+      &:after {
+        left: 0;
+        bottom: 0;
+        top: auto;
+        width: 20%;
+        height: 25px;
+        border-right: 20px solid transparent;
+        border-bottom: 25px solid #ECECEC;
+      }
+    }
+    
+  }
+  .home-campus {
+    .name-cont {
+      height: 400px !important;
+    }
+    .owl-campus {
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .inner-pages{
+    .about-courses {
+      h4 {
+        max-width: 100% !important;
+      }
+      p {
+        line-height: 2.5rem;
+      }
+    }
+    .powerhouse-list {
+      padding-left: 0 !important;
+      .powerhouse-desc {
+        h5 {
+          margin-left: 0;
+        }
+      }
     }
   }
 }

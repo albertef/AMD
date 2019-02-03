@@ -35,63 +35,64 @@
                 <img src="img/course-icon.png" class="img-responsive">
                 <h3>Popular Courses</h3>
                 <p>AMD is an institution founded for the development of creativity and innovation and we apply this approach to the delivery of our cutting-edge courses as well. </p>
-                <button class="btn">READ MORE &rarr;</button>
+                <button class="btn" onclick="window.location.assign('courses.php');">READ MORE &rarr;</button>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding course-cards">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding">
-                <article>
-                    <h4>Advanced <br>Certification <br> Course in <br> Advertising <br> Design</h4>
-                    <span class="arrow"><em>&rarr;</em></span>
-                </article>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding">
-                <article>
-                    <h4>Advanced <br>Certification <br>Course in <br>Web designing, <br>UI & UX</h4>
-                    <span class="arrow"><em>&rarr;</em></span>
-                </article>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding">
-                <article>
-                    <h4>Advanced <br>Certification <br>Course in <br>360 Digital <br>Designs</h4>
-                    <span class="arrow"><em>&rarr;</em></span>
-                </article>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding">
-                <article>
-                    <h4>Advanced <br>Certification <br>Course in <br>Video <br>Production</h4>
-                    <span class="arrow"><em>&rarr;</em></span>
-                </article>
-            </div>
+
+            <?php
+                $sql = "SELECT * FROM amd_courses ORDER BY course_id ASC LIMIT 4";
+                $result = mysqli_query($conn, $sql);
+
+                if (mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                        echo '
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-padding" onclick="window.location.assign(\'course-details.php?id=' . $row["course_id"] . '\');">
+                            <article>
+                                <h4>' . $row["course_name"] . '</h4>
+                                <span class="arrow"><em>&rarr;</em></span>
+                            </article>
+                        </div>';
+                    }
+                } 
+                else {
+                    echo "Courses coming soon";
+                }
+            ?>
+
         </div>
     </div>
 
     <div class="home-powerhouse">
         <div class="owl-carousel" id="owl-powerhouse">
-            <div class="powerhouse-item">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding power-house-img">
-                    <img src="img/power-house/img1.jpg" class="img-responsive">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding power-house-cont">
-                    <h3>Power House</h3>
-                    <p>"Design is the method of putting form and content together. Design, just as art, has multiple definitions, there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."</p>
-                    <h6>Nickolas Mars, Creative Director</h6>
-                </div>
-            </div>
-            <div class="powerhouse-item">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding power-house-img">
-                    <img src="img/banner/banner1.jpg" class="img-responsive">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding power-house-cont">
-                    <h3>Power House</h3>
-                    <p>"Design is the method of putting form and content together. Design, just as art, has multiple definitions, there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."</p>
-                    <h6>Nickolas Mars, Creative Director</h6>
-                </div>
-            </div>  
+
+                <?php
+                    $sql = "SELECT * FROM amd_powerhouse";
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_assoc($result)) {
+                            echo '
+                            <div class="powerhouse-item">
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding power-house-img">
+                                    <img src="img/powerhouse/'. $row["powerhouse_image"] .'" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding power-house-cont">
+                                    <h3>Power House</h3>
+                                    <p>"'. $row["powerhouse_desc"] .'"</p>
+                                    <h6>'. $row["powerhouse_name"] .'<span>'. $row["powerhouse_designation"] .'</span></h6>
+                                </div>
+                                </div>';
+                        }
+                    } 
+                    else {
+                        echo "No Powerhouse details available";
+                    }
+                ?>
         </div>
     </div>
 
-    <div class="home-blog">
+    <div class="home-blog hide">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">
                 <img src="img/home-blog-icon.png" class="img-responsive">
@@ -117,9 +118,24 @@
     <div class="home-campus">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding course-cards">
             <div class="owl-carousel owl-campus" id="owl-campus">
-                <div class="campus-item"><img src="img/campus/img1.jpg" class="img-responsive"></div>
-                <div class="campus-item"><img src="img/campus/img2.jpg" class="img-responsive"></div>
-                <div class="campus-item"><img src="img/campus/img3.jpg" class="img-responsive"></div>
+
+                <?php
+                    $sql = "SELECT * FROM amd_campus";
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_assoc($result)) {
+                            echo '
+                                <div class="campus-item">
+                                    <img class="img-responsive" src="img/campus/inner/'. $row["campus_image"] .'">
+                                </div>';
+                            }
+                        } 
+                        else {
+                            echo "Campus page is coming soon!";
+                        }
+                ?>
+
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
@@ -131,7 +147,7 @@
     </div>
 
 
-    <div class="home-news">
+    <div class="home-news hide">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">
                 <img src="img/home-news-icon.png" class="img-responsive">
@@ -153,8 +169,5 @@
             </div>
         </div>
     </div>
-
-
-
 
 <?php include ("includes/footer.php"); ?>

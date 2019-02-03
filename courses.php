@@ -23,7 +23,12 @@
 
                 if (mysqli_num_rows($result) > 0) {
                     while($row = mysqli_fetch_assoc($result)) {
-                        echo '<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding course-list-item" onclick="window.location.assign(\'course-details.php?id=' . $row["course_id"] . '\');"><div><h5>' . $row["course_name"] . '</h5><span class="arrow"><em>&rarr;</em></span></div></div>';
+                        echo '<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding course-list-item" onclick="window.location.assign(\'course-details.php?id=' . $row["course_id"] . '\');">
+                            <div>
+                                <h5>' . $row["course_name"] . '</h5>
+                                <span class="arrow"><em>&rarr;</em></span>
+                            </div>
+                        </div>';
                     }
                 } 
                 else {
