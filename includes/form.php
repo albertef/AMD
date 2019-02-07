@@ -1,24 +1,26 @@
 <div class="form-container">
     <img src="img/form-icon.png" class="img-responsive">
-    <h1>Take the next step. Join us.</h1>
-    <form action="" method="post" id="joinForm">
+    <h1>Have more questions? We'll call you back!</h1>
+    <form action="" method="post" id="joinForm"  onsubmit="return validateDropdown();">
         <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="Name" required>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" name="phone" placeholder="Contact Number" required>
+            <input type="number" min="0" class="form-control" name="phone" placeholder="Contact Number" required>
         </div>
         <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Email" required>
         </div>
         <div class="form-group">
+            
             <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" value="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Course Interested In?
+                    Select Interested Course 
                     <span class="caret"></span>
                 </button>
+                <span class="courseError"><i class="fa fa-exclamation" aria-hidden="true"></i> Please select a course</span>
 
-                <input type="hidden" name="course" value="">
+                <input type="hidden" name="course" id="courseHidden" value="" required>
                 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <?php
@@ -27,7 +29,7 @@
                     $result = mysqli_query($conn, $sql);
                     if (mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
-                            echo '<li><a href="javascript:void(0);" title="'.$row["course_name"].'">'.$row["course_name"].'</a></li>';
+                            echo '<li><a href="javascript:void(0);" title="'.$row["course_name"].'">'.$row["course_dropdown"].'</a></li>';
                         }
                     }
                     else {
@@ -37,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <button type="submit" class="btn btn-default form-send" name="submit-enquiry">SEND &rarr;</button>
+        <button type="submit" class="btn btn-default form-send" name="submit-enquiry">SUBMIT &rarr;</button>
     </form> 
 </div>
 
@@ -83,7 +85,8 @@
           </table>
           ";
 
-          $tomail="albertef@gmail.com";
+          //$tomail="albertef@gmail.com";
+          $tomail="info@amd.edu.in";
           $subject="AMD Online Enquiry";
           $headers = "MIME-Version: 1.0\r\n";
           $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";

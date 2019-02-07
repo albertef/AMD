@@ -42,6 +42,22 @@ a:hover {
   text-decoration: none;
 }
 
+sup {
+  font-size: 55% !important;
+}
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .overlay {
   position: fixed;
   width: 100%;
@@ -134,37 +150,47 @@ button {
 }
 
 .form-container input[type="text"],
-.form-container input[type="email"] {
+.form-container input[type="email"],
+.form-container input[type="number"] {
   color: #626262;
   border: 1px solid #626262;
-  padding: 20px 15px;
+  padding: 5px 15px;
   max-width: 365px;
   border-radius: 0;
   background: transparent;
   line-height: 1rem;
   margin: 20px 0;
+  min-height: 45px;
 }
 
 .form-container input[type="text"]::-webkit-input-placeholder,
-.form-container input[type="email"]::-webkit-input-placeholder {
+.form-container input[type="email"]::-webkit-input-placeholder,
+.form-container input[type="number"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #626262;
 }
 
 .form-container input[type="text"]:-ms-input-placeholder,
-.form-container input[type="email"]:-ms-input-placeholder {
+.form-container input[type="email"]:-ms-input-placeholder,
+.form-container input[type="number"]:-ms-input-placeholder {
   /* IE 10+ */
   color: #626262;
 }
 
 .form-container input[type="text"]::-ms-input-placeholder,
-.form-container input[type="email"]::-ms-input-placeholder {
+.form-container input[type="email"]::-ms-input-placeholder,
+.form-container input[type="number"]::-ms-input-placeholder {
   color: #626262;
 }
 
 .form-container input[type="text"]::placeholder,
-.form-container input[type="email"]::placeholder {
+.form-container input[type="email"]::placeholder,
+.form-container input[type="number"]::placeholder {
   color: #626262;
+}
+
+.form-container .dropdown {
+  width: 100% !important;
 }
 
 .form-container .dropdown button,
@@ -172,7 +198,7 @@ button {
   color: #626262;
   border: 1px solid #626262;
   border-radius: 0;
-  padding: 15px 15px;
+  padding: 10px 15px;
   max-width: 365px;
   background: transparent;
   line-height: 2rem;
@@ -198,13 +224,17 @@ button {
   background: #112f4a;
 }
 
+.form-container .dropdown .dropdown-menu li {
+  list-style: none;
+}
+
 .form-container .dropdown .dropdown-menu li a {
   color: #fff;
   font-family: "Gotham-Light", sans-serif;
   font-weight: 500 !important;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   white-space: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -222,6 +252,27 @@ button {
   border-radius: 0;
   line-height: 1rem;
   margin-top: 10px;
+}
+
+span.courseError {
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: 20%;
+  background: #fff;
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  color: #706f6f;
+  display: none;
+  font-weight: 200;
+  font-family: "Gotham-Book", sans-serif;
+}
+
+span.courseError i {
+  background: orange;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fff;
 }
 
 .footer {
@@ -292,6 +343,12 @@ button {
 
 .footer p.social-icons {
   margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .footer p.social-icons a {

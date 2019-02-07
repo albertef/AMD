@@ -21,7 +21,7 @@
                                     <img class="img-responsive" src="img/contact/icon1.png"/>
                                 </div>
                                 <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11 no-padding">
-                                    <h5>Acadamey of media and design</h5>
+                                    <h5>Academy of media and design</h5>
                                     <p>'. $row["contact_address"] .'</p>
                                 </div>
                             </div>

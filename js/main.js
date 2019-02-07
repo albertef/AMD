@@ -102,9 +102,15 @@
 
   $(".dropdown li a").on("click", function () {
     $(this).parents("ul").siblings("button")[0].innerHTML = $(this)[0].innerText + ' <span class="caret"></span>';
-    $(this).parents("ul").siblings("input")[0].value = $(this)[0].innerText;
+    var dropdownValue = $(this).attr("title");
+    $(this).parents("ul").siblings("input")[0].value = dropdownValue;
   });
 
+  $(':input[type=number]').on('mousewheel', function (e) {
+    $(this).blur();
+  });
+
+  $('.selectpicker').selectpicker();
 
   $(".panel-body a").on("click", function () {
     $(this)
@@ -136,3 +142,11 @@
 
   $(".bg-success, .bg-danger").hide(10000);
 })();
+
+function validateDropdown() {
+  var courseVal = $('#joinForm').find('#courseHidden').val();
+  if (courseVal == "") {
+    $('.courseError').fadeIn().fadeOut(5000);
+    return false;
+  }
+}

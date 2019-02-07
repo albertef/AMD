@@ -13,22 +13,22 @@
 
 	<link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 <body>
 <div class="left-bar-fixed col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding desktop">
 <a href="index.php"><img src="img/logo.png" class="img-responsive logo"></a>
 	<?php include ("nav.php"); ?>
 	<div class="social-icons text-center">
-		<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		<a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-		<a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		<a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/amdcampus/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="http://www.instagram.com/amdcampus/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<!-- <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
 	</div>
 </div>
 

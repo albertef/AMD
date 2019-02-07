@@ -58,6 +58,22 @@ a {
     text-decoration: none;
   }
 }
+
+sup{
+  font-size: 55% !important;
+}
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .overlay {
   position: fixed;
   width: 100%;
@@ -135,25 +151,28 @@ button {
     font-size: 2.8rem;
   }
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  input[type="number"] {
     color: $form-gray;
     border: 1px solid $form-gray;
-    padding: 20px 15px;
+    padding: 5px 15px;
     max-width: 365px;
     @include border-radius(0);
     background: transparent;
     line-height: 1rem;
     margin: 20px 0;
+    min-height: 45px;
 
     @include placeholder($form-gray);
   }
   .dropdown {
+    width:100% !important;
     button,
     &.open button {
       color: $form-gray;
       border: 1px solid $form-gray;
       @include border-radius(0);
-      padding: 15px 15px;
+      padding: 10px 15px;
       max-width: 365px;
       background: transparent;
       line-height: 2rem;
@@ -178,13 +197,14 @@ button {
       background: $dark-blue;
 
       li {
+        list-style: none;
         a {
           color: $white;
           font-family: "Gotham-Light", sans-serif;
           font-weight: 500 !important;
-          padding: 5px;
+          padding: 5px 5px 5px 10px;
           white-space: normal;
-          font-size: 1rem;
+          font-size: 1.1rem;
           @include transition($base-speed);
           &:hover {
             background: rgba($form-gray, 0.5);
@@ -202,6 +222,28 @@ button {
       @include border-radius(0);
       line-height: 1rem;
       margin-top: 10px;
+    }
+  }
+}
+
+span {
+  &.courseError {
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 20%;
+    background: $white;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    color: $gray;
+    display: none;
+    font-weight: 200;
+    font-family: "Gotham-Book", sans-serif;
+    i{
+      background: orange;
+      padding:5px 10px;
+      border-radius: 3px;
+      color: $white;
     }
   }
 }
@@ -256,6 +298,8 @@ button {
       }
       &.social-icons {
         margin: 10px;
+        display: flex;
+        justify-content: left;
         a {
           min-width: 0;
           padding: 10px;

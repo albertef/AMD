@@ -156,6 +156,7 @@ section {
   img {
     margin-bottom: 20px;
     max-width: 90%;
+    margin-top: 25px;
   }
 }
 .home-courses {
@@ -272,6 +273,7 @@ section {
       border-bottom: 20px solid transparent;
       border-right: 25px solid $light-gray;;
       height: 20%;
+      z-index: 99;
     }
     &:after {
       content: "";
@@ -286,6 +288,7 @@ section {
     img {
       max-height: 385px;
       object-fit: cover;
+      filter: grayscale(100%);
     }
   }
   .power-house-cont{
@@ -320,20 +323,28 @@ section {
       color: $dark-blue;
       font-size: 3rem;
     }
+    .p-cont {
+      width: 90%;
+      margin-top: 30px;
+      max-height: 110px;
+      overflow: auto;
+      padding-right: 50px;
+    }
     p {
       font-family: "Gotham-Light", sans-serif;
       font-size: 1.65rem;
       color: $dark-blue;
       letter-spacing: -0.5px;
-      width: 80%;
-      margin-top: 30px;
-      max-height: 110px;
-      overflow: auto;
+      
     }
     h6 {
       font-family: "Gotham-Book", sans-serif;
       color: $medium-gray;
       font-weight: 100;
+    }
+    .btn{
+      margin-right: 150px;
+      float: right;
     }
   }
   .owl-nav{
@@ -411,30 +422,33 @@ section {
   overflow: hidden;
   .edge-left {
     background: $pink;
-    min-height: 750px;
-    max-height: 750px;
+    min-height: 850px;
+    max-height: 850px;
     p, h4 {
       color: $white;
     }
-    .awards {
-      padding: 25px 25px 5px;
-      background: $white;
-      display: inline-block;
-      img{
-        margin-bottom: 20px;
-      }
+    sup{
+      top: -0.7rem;
     }
+    
   }
   .edge-right {
     background: $dark-blue;
-    min-height: 750px;
-    max-height: 750px;
+    min-height: 850px;
+    max-height: 850px;
+    h4 {
+      font-family: "Gotham-Medium", sans-serif;
+      color: $white;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      margin-left: 45px;
+    }
     ul {
       padding:0;
       li {
         font-family: "Gotham-Book", sans-serif;
         line-height: 3rem;
-        margin: 50px 0;
+        margin: 40px 0;
         position: relative;
         padding-left: 50px;
         &:before {
@@ -448,14 +462,23 @@ section {
         }
       }
     }
+    .awards {
+      padding: 25px 25px 5px;
+      background: $white;
+      display: inline-block;
+      width: 80%;
+      img{
+        margin-bottom: 20px;
+      }
+    }
   }
   .welcome-inner-right {
     max-width: 100%;
-    padding: 110px 40px 80px 0;
+    padding: 70px 40px 80px 0;
     margin-right: 0;
     float: none;
-    min-height: 750px;
-    max-height: 750px;
+    min-height: 850px;
+    max-height: 850px;
     &:after {
       @include triangle-right($blue, 150px, -75px);
     }
@@ -492,6 +515,7 @@ section {
         max-width: 100%;
         max-height: 260px;
         object-fit: cover;
+        width: 100%;
       }
       p {
         &:first-child {
@@ -623,9 +647,10 @@ section {
   }
   .course-list {
     overflow: hidden;
+    margin-top: 40px;
     .course-list-item {
       overflow: hidden;
-
+      
       @for $i from 1 through 10 {
         &:nth-child(#{$i}) { 
           >div{
@@ -687,6 +712,7 @@ section {
     }
     .contact-form {
       padding-bottom: 150px;
+      display: inline-block;
       .form-container {
         width: 89%;
         margin: 0 0 0 20px;
@@ -698,8 +724,9 @@ section {
           overflow: hidden;
           width: 100%;
           color: $white;
+          font-size: 2.5rem;
         }
-        input[type="text"], input[type="email"]{
+        input[type="text"], input[type="email"], input[type="number"]{
           color: $white;
           border: 1px solid $white;
           @include placeholder($white);
@@ -725,6 +752,11 @@ section {
         max-width: 80%;
         margin: 50px auto;
   
+      }
+      &.placements {
+        img {
+          margin-top: 0;
+        }
       }
     }
     &.pink {
@@ -784,7 +816,7 @@ section {
           h1 {
             color: $dark-blue;
           }
-          input[type="text"], input[type="email"]{
+          input[type="text"], input[type="email"], input[type="number"]{
             color: $dark-blue;
             border: 1px solid $dark-blue;
             @include placeholder($dark-blue);
@@ -1045,6 +1077,10 @@ section {
       overflow-y: auto;
       max-height: 250px;
       width: 98%;
+      p{
+        margin-bottom: 10px !important;
+        color: $white;
+      }
     }
 
     &.green {
@@ -1139,7 +1175,7 @@ section {
   .banner-form {
     .home-form-container {
       height: auto;
-      padding-bottom: 40px;
+      padding-bottom: 120px;
       .form-container{
         margin-top: 50px;
         width: 80%;
@@ -1170,14 +1206,16 @@ section {
     .power-house-cont {
       height: auto;
       padding-bottom: 130px;
+      .p-cont {
+        width: 100%;
+        max-height: none;
+      }
       h3 {
         margin-top: 0;
         margin-bottom: 100px;
       }
       p{
         width: 100%;
-        max-height: 200px;
-        overflow: auto;
       }
       &:before {
         top: 90px;
@@ -1194,6 +1232,9 @@ section {
         height: 60px;
         @include transform(rotateY(0deg));
       }
+      .btn{
+        float: left;
+      }
     }
     .power-house-img{
       &:before {
@@ -1204,6 +1245,7 @@ section {
         height: 25px;
         border-left: 20px solid transparent;
         border-bottom: 25px solid #ECECEC;
+        z-index: 99;
       }
       &:after {
         left: 0;
@@ -1244,5 +1286,8 @@ section {
         }
       }
     }
+  }
+  .the-edge .edge-left {
+    max-height: none;
   }
 }

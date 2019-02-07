@@ -31,7 +31,7 @@
                                     <img class="img-responsive" src="img/course/course-icon1.png"/>
                                 </div>
                                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 no-padding">
-                                    <h5>Course Scope</h5>
+                                    <h5>Career Scope</h5>
                                     <p>'. $row["course_scope"] .'</p>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                     <ul>'. $row["course_modules"] .'</ul>
                                 </div>
                             </div>
-                            <div class="course-details">
+                            <div class="course-details hide">
                                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 no-padding text-right">
                                     <img class="img-responsive" src="img/course/course-icon4.png"/>
                                 </div>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 no-padding">
                                     <h5>Teaching Method</h5>
-                                    <p>'. $row["course_method"] .'</p>
+                                    <ul>'. $row["course_method"] .'</ul>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,31 @@
         ?>
 
         
+        <div class="course-list">
+            
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+            <h4>OTHER COURSES</h4>
+            <?php
+                $sql = "SELECT * FROM amd_courses WHERE course_id!=".$course_id;
+                $result = mysqli_query($conn, $sql);
 
+                if (mysqli_num_rows($result) > 0) {
+                    while($row = mysqli_fetch_assoc($result)) {
+                        echo '<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding course-list-item" onclick="window.location.assign(\'course-details.php?id=' . $row["course_id"] . '\');">
+                            <div>
+                                <h5>' . $row["course_name"] . '</h5>
+                                <span class="arrow"><em>&rarr;</em></span>
+                            </div>
+                        </div>';
+                    }
+                } 
+                else {
+                    echo "Courses coming soon";
+                }
+            ?>
+            </div>
+
+        </div>
         
 
 

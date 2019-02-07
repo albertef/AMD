@@ -8,10 +8,14 @@
 
         <div class="about-courses">
             <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-1 col-lg-10 no-padding">
-                <h4>LEARN, INSPIRE, CREATE</h4>
-                <P>AMD is an institution founded for the development of creativity and innovation and we apply this approach to our courses as well. While studying at AMD, you will learn from professionals, work in industry-standard facilities and benefit from a network of incredible contacts whilst getting the experience needed for working in your chosen field and develop the future-focused skills you will need to succeed.</P>
+                <h4>COURSES</h4>
 
-                <P>The courses are designed in a way that prioritises the development of practical application skills by having devoted lab and theory secessions every day, where students work with industry standard software’s that would help them in their professional careers. The hybrid natures of our courses not only equip students for one particular career but also impart an array of knowledge about related careers, giving them an added advantage.</P>
+                <P>AMD is an institution founded for the development of creativity and innovation and we apply this approach to the delivery of our cutting-edge courses as well. Designed not just for beginners, the choices of courses are also structured to help working professionals upgrade their knowledge in terms of insight and practices. </P>
+
+                <P>Our courses are designed by our research and development consultants from the creative industry and then passed on to our team of industry experts. Based on their insight and feedback, the course content is re-evaluated and updated. This inclusive process allows our academic curriculum to be in tune with the latest trends and changes in the industry. Paired with industry standard software and the NSQF framework, the course structure and content are finalised. </P>
+
+                <P>This elaborately planned structure of our curriculum prepares students to develop and update the skills required to work and succeed across the creative industries.</P>
+
             </div>
         </div>
 

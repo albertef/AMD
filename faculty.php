@@ -8,10 +8,14 @@
 
         <div class="about-courses">
             <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-1 col-lg-10 no-padding">
-                <h4>YOUR MENTORS</h4>
-                <P>You will be guided through every phase of your programme by our highly trained and skilled faculty in both traditional and digital fields who have earned gold standard expertise in their respective fields. Our team of academic staff includes artists, writers, illustrators, graphic designers, performers and researchers many of whom have showcased their work and shared their knowledge on various platforms. You’ll also be supported by skilled technical specialists in print making and digital media. </P>
+                <h4>FACULTY</h4>
 
-                <div class="mentor-list">
+                <P>Students will be guided through every phase of their program by our highly trained and skilled faculty, strong in art, design and technology side. They are skilled individuals who have been 'Trained to Teach' and not just impart knowledge. The trainers are considered fit for practice only after undergoing AMDs Faculty Development Program, that grooms every faculty member on how to cater to every participants' learning experience. </P>
+                
+                <P>All our faculty members have also attended the Training of Trainer (TOT) program conducted by Media and Entertainment Skills Council and have been certified by the council for their specific skills. The primary objective of the TOT program is to standardise the training procedure and also to update them with the industry standards. A trainer can deliver great results only when he/she understands the basics, and this program ensures that the trainers are equipped well with the basics that will help them cater to the needs of the students.</P>
+
+
+                <div class="mentor-list hide">
                     
 
                             <?php

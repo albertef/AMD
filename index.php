@@ -18,10 +18,11 @@
     <div class="trained-skill">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <h3>
-                Professionally trained.<br>
-                Professionally skilled.
+                TRAINING AND CERTIFICATION PARTNERS.
             </h3>
-            <p>Adobe certification is the absolute best way to <br>communicate your proficiency in Adobe products.</p>
+            <p>Our association with Adobe will provide an opportunity for students to leverage Adobe tools, which will
+help them harness their creative skills and gain an edge. We also help our students undergo assessment
+by Media and Entertainment Skills Council.</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="img/ACTA.jpg" class="img-responsive">
@@ -34,8 +35,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">
                 <img src="img/course-icon.png" class="img-responsive">
                 <h3>Popular Courses</h3>
-                <p>AMD is an institution founded for the development of creativity and innovation and we apply this approach to the delivery of our cutting-edge courses as well. </p>
-                <button class="btn" onclick="window.location.assign('courses.php');">READ MORE &rarr;</button>
+                <p>AMD is an institution founded for the development of creativity and innovation and we apply this approach to the delivery of our cutting edge courses as well. Designed not just for beginners, the choices of courses are also structured to help working professionals to upgrade their knowledge in terms of insight and practice.</p>
+                <button class="btn" onclick="window.location.assign('courses.php');">VIEW ALL COURSES &rarr;</button>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding course-cards">
@@ -67,7 +68,7 @@
         <div class="owl-carousel" id="owl-powerhouse">
 
                 <?php
-                    $sql = "SELECT * FROM amd_powerhouse";
+                    $sql = "SELECT * FROM amd_powerhouse WHERE powerhouse_status=1";
                     $result = mysqli_query($conn, $sql);
 
                     if (mysqli_num_rows($result) > 0) {
@@ -78,11 +79,15 @@
                                     <img src="img/powerhouse/'. $row["powerhouse_image"] .'" class="img-responsive">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding power-house-cont">
-                                    <h3>Power House</h3>
-                                    <p>"'. $row["powerhouse_desc"] .'"</p>
+                                    <h3>Powerhouse</h3>
+                                    <div class="p-cont">
+                                        <p>'. substr($row["powerhouse_desc"],0,230) .'...</p>
+                                    </div>
                                     <h6>'. $row["powerhouse_name"] .'<span>'. $row["powerhouse_designation"] .'</span></h6>
+                                    <button class="btn" onclick="window.location.assign(\'powerhouse.php\');">READ MORE &rarr;</button>
                                 </div>
-                                </div>';
+                                
+                            </div>';
                         }
                     } 
                     else {
@@ -141,7 +146,8 @@
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 name-cont no-padding">
                 <img src="img/home-campus-icon.png" class="img-responsive">
-                <h3>Campus Facilities</h3>
+                <h3>Creative Hub</h3>
+                <p>Great commitment and effort has been put into designing our academic curriculum and have been backed up by our well equipped labs, to prepare and nurture students for a better learning experience. </p>
             </div>
         </div>
     </div>

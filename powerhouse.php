@@ -8,13 +8,15 @@
 
         <div class="about-courses">
             <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-1 col-lg-10 no-padding">
-                <h4>AMD POWER HOUSE</h4>
-                <P>Our advisory board consists of experts who have proven their mettle in the industry. Their skills and expertise have been put to use to design our academic curriculum, which has been constructed to inspire and guide individual talent and mould them into professionals, ready to compete in the industry.</P>
+                <h4>THE AMD POWERHOUSE </h4>
+                <P>Sometimes it really helps to have someone around who already knows the turf. Our students will be supported by our Advisory Board, consisting of experts who have proven their mettle in the creative industry. This team, a set of select experts, are professionals who have bagged international awards including the Cannes, VFX experts who have worked in major Hollywood titles including Oscar award-winning movies, animation experts with international exposure who have worked in big brands: both national and international, talented artists who have won international scholarships, NID alumni, and more. </P>
+
+                <P>Their skills and expertise have been used to curate our academic curriculum and are here to advise the students about everything. Right from inspiring them, making sure they get the right skills, experience and knowledge, to preparing them for interviews, they'll be guided by our Advisory Board. Through the boards network of contacts with companies and artists, students will gain valuable industry insight as well.</P>
 
                 <div class="powerhouse-list">
 
                             <?php
-                                $sql = "SELECT * FROM amd_powerhouse";
+                                $sql = "SELECT * FROM amd_powerhouse WHERE powerhouse_status=1";
                                 $result = mysqli_query($conn, $sql);
 
                                 if (mysqli_num_rows($result) > 0) {
