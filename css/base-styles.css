@@ -266,6 +266,7 @@ span.courseError {
   display: none;
   font-weight: 200;
   font-family: "Gotham-Book", sans-serif;
+  z-index: 9;
 }
 
 span.courseError i {
@@ -316,6 +317,10 @@ span.courseError i {
   color: #112f4a;
 }
 
+.footer p a.active {
+  color: #112f4a;
+}
+
 .footer p strong {
   font-weight: 400;
   font-family: "Gotham-Medium",sans-serif;
@@ -356,6 +361,14 @@ span.courseError i {
   padding: 10px;
   color: #112f4a;
   font-size: 2rem;
+}
+
+.footer p em.seperator {
+  border-bottom: 1px dashed #b2b2b2;
+  display: block;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
 }
 
 .footer .subscribe p {
@@ -429,7 +442,7 @@ span.courseError i {
   opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
@@ -475,7 +488,7 @@ span.courseError i {
     color: #112f4a;
     display: inline-block;
     z-index: 999;
-    width: 10%;
+    width: 35px;
     background: #fff;
     padding: 15px 10px;
     -webkit-box-sizing: content-box;
@@ -561,7 +574,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+@media only screen and (max-width: 992px) and (max-width: 768px) {
   .about-inner-right.welcome-inner-right.message:after {
     background: #db4f71 !important;
     right: -33.33333px;
@@ -571,7 +584,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .about-inner-right.welcome-inner-right.list {
     padding: 30px 40px 80px 0 !important;
   }
@@ -589,7 +602,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+@media only screen and (max-width: 992px) and (max-width: 768px) {
   .about-inner-right.welcome-inner-right.list:before {
     background: #db4f71 !important;
     left: -33.33333px;
@@ -599,7 +612,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .edge-left {
     padding: 0 15px;
   }
@@ -620,7 +633,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+@media only screen and (max-width: 992px) and (max-width: 768px) {
   .ceo-message .ceo-left.message:before {
     background: #112f4a !important;
     left: -33.33333px;
@@ -630,7 +643,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .ceo-message .ceo-right .ceo-inner-right {
     max-width: 94% !important;
     margin: 30px 0 80px !important;
@@ -652,7 +665,7 @@ span.courseError i {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .mobile {
     display: none;
   }

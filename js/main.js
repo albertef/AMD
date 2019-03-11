@@ -97,7 +97,12 @@
   $(".modal-header .close").on("click", function () {
     $(".modal").removeClass("in");
     $(".modal").fadeOut(500);
-    window.location.assign(window.location.pathname);
+    if ($(this).hasClass("registration-close")) {
+      window.location.assign("http://www.amd.edu.in/");
+    }
+    else {
+      window.location.assign(window.location.pathname);
+    }
   });
 
   $(".dropdown li a").on("click", function () {
@@ -147,6 +152,20 @@ function validateDropdown() {
   var courseVal = $('#joinForm').find('#courseHidden').val();
   if (courseVal == "") {
     $('.courseError').fadeIn().fadeOut(5000);
+    return false;
+  }
+}
+
+function seminarValidation() {
+  var nameVal = $('#seminarForm').find('#name').val();
+  var emailVal = $('#seminarForm').find('#email').val();
+
+  if (/^[a-zA-Z ]*$/.test(nameVal) == false) {
+    $('#seminarForm').find('#name').siblings('.courseError').fadeIn().fadeOut(5000);
+    return false;
+  }
+  else if (/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(emailVal) == false) {
+    $('#seminarForm').find('#email').siblings('.courseError').fadeIn().fadeOut(5000);
     return false;
   }
 }

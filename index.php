@@ -83,7 +83,7 @@ by Media and Entertainment Skills Council.</p>
                                     <div class="p-cont">
                                         <p>'. substr($row["powerhouse_desc"],0,230) .'...</p>
                                     </div>
-                                    <h6>'. $row["powerhouse_name"] .'<span>'. $row["powerhouse_designation"] .'</span></h6>
+                                    <h6>'. $row["powerhouse_name"] .', <span>'. $row["powerhouse_designation"] .'</span></h6>
                                     <button class="btn" onclick="window.location.assign(\'powerhouse.php\');">READ MORE &rarr;</button>
                                 </div>
                                 

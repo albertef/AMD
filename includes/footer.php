@@ -3,25 +3,28 @@
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding">
 			<h5>USEFUL LINKS</h5>
 			<p>
-				<a href="about.php">About AMD</a>
-				<a href="courses.php">Courses</a>
-				<a href="faculty.php">Faculty</a>
-				<a href="campus.php">Creative Hub</a>
-				<a href="placements.php">Placements</a>
-				<a href="powerhouse.php">Powerhouse</a>
-				<a href="contact.php">Get In Touch</a>
-				<!-- <a href="#">Testimonials</a>
-				<a href="#">AMD Blog</a> -->
+				<a class="<?= ($activePage == 'about') ? 'active':''; ?>" href="about.php">About AMD</a>
+				<a class="<?= ($activePage == 'courses' || $activePage == 'course-details') ? 'active':''; ?>" href="courses.php">Courses</a>
+				<a class="<?= ($activePage == 'faculty') ? 'active':''; ?>" href="faculty.php">Faculty</a>
+				<a class="<?= ($activePage == 'campus') ? 'active':''; ?>" href="campus.php">Creative Hub</a>
+				<a class="<?= ($activePage == 'gallery') ? 'active':''; ?>" href="gallery.php">Gallery</a>
+				<a class="<?= ($activePage == 'placements') ? 'active':''; ?>" href="placements.php">Placements</a>
+				<a class="<?= ($activePage == 'powerhouse') ? 'active':''; ?>" href="powerhouse.php">Powerhouse</a>
+				<a class="<?= ($activePage == 'news' || $activePage == 'news-view') ? 'active':''; ?>" href="news.php">News & Events</a>
+				<a class="<?= ($activePage == 'contact') ? 'active':''; ?>" href="contact.php">Get In Touch</a>
 			</p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding">
 			<h5>CONTACT US</h5>
 			<p>
-				<strong>Corporate Office :</strong> <br>
-				I<sup>st</sup> Floor, SJ Complex<br> 
+				<!-- <strong>Corporate Office :</strong> <br> -->
+				Deshabhimani Junction, Kaloor<br> 
+				Cochin - 682017 <br> 
+				<em class="seperator"></em>
 				Next to Kalyan Silks, Railway Station Road<br>
-				Palakkad, Kerala - 678001<br>
-				<strong>Tel :</strong> 09656 039 944/ 09656 099 333<br> 
+				Palakkad - 678001<br>
+				<em class="seperator"></em>
+				<strong>Tel :</strong> 09656 039 944 / 09656 099 333<br> 
 				<strong>Email :</strong> info@amd.edu.in
 				
 			</p>
@@ -89,7 +92,7 @@
          
 				$message ="<table width=80%  border=0 cellspacing=0 cellpadding=0 style='background:#FFF; border: 1px solid #112f4a; margin: 0 auto;'>
 				<tr>
-				<td colspan=2 align=center style='padding: 10px 0;'><img src='http://vibrantangle.com/amd/img/logo.png' width='100'></td>
+				<td colspan=2 align=center style='padding: 10px 0;'><img src='http://amd.edu.in/img/logo.png' width='100'></td>
 				</tr>
 				<tr>
 				<td colspan=2 align=center style='background:#112f4a; height:5px;' ></td>
@@ -156,40 +159,21 @@
 
     ?>
 
-
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type='text/javascript' src='js/ug/unitegallery.min.js'></script> 
+<script type='text/javascript' src='js/ug/ug-theme-tiles.js'></script>
 <script type="text/javascript" src="js/main.js"></script>
 
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5c56f5857cf662208c93d9d8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script> -->
-<!--End of Tawk.to Script-->
+<script type="text/javascript"> 
+			
+	$(document).ready(function(){ 
+		$("#gallery").unitegallery(); 
+	}); 
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5c58857b6cb1ff3c14cb16d8/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
 </script>
-<!--End of Tawk.to Script-->
 
 </body>
 </html>

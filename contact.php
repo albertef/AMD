@@ -30,7 +30,7 @@
                                     <img class="img-responsive" src="img/contact/icon2.png"/>
                                 </div>
                                 <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11 no-padding">
-                                    <h6>Corporate Office:</h6>
+                                    
                                     <p>'. $row["contact_corp"] .'</p>
                                 </div>
                             </div>

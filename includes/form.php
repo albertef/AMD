@@ -56,7 +56,7 @@
 
           $message ="<table width=80%  border=0 cellspacing=0 cellpadding=0 style='background:#FFF; border: 1px solid #112f4a; margin: 0 auto;'>
           <tr>
-          <td colspan=2 align=center style='padding: 10px 0;'><img src='http://vibrantangle.com/amd/img/logo.png' width='100'></td>
+          <td colspan=2 align=center style='padding: 10px 0;'><img src='http://amd.edu.in/img/logo.png' width='100'></td>
           </tr>
           <tr>
           <td colspan=2 align=center style='background:#112f4a; height:5px;' ></td>

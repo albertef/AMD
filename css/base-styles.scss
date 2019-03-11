@@ -239,6 +239,7 @@ span {
     display: none;
     font-weight: 200;
     font-family: "Gotham-Book", sans-serif;
+    z-index: 9;
     i{
       background: orange;
       padding:5px 10px;
@@ -281,6 +282,9 @@ span {
           @include transition($base-speed);
           color: $dark-blue;
         }
+        &.active {
+          color: $dark-blue;
+        }
       }
       strong {
         font-weight: 400;
@@ -305,6 +309,15 @@ span {
           padding: 10px;
           color: $dark-blue;
           font-size: 2rem;
+        }
+      }
+      em {
+        &.seperator {
+          border-bottom: 1px dashed $medium-gray;
+          display: block;
+          padding-top: 5px;
+          margin-bottom: 5px;
+          width: 95%;
         }
       }
     }
@@ -374,7 +387,7 @@ span {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
@@ -417,7 +430,7 @@ span {
         color: $dark-blue;
         display: inline-block;
         z-index: 999;
-        width: 10%;
+        width: 35px;
         background: $white;
         padding: 15px 10px;
         box-sizing: content-box;
@@ -531,7 +544,7 @@ span {
       }
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .mobile {
     display: none;
   }

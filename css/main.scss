@@ -2,6 +2,38 @@
 @import "mixins.scss";
 @import "base-styles.scss";
 
+.register-page {
+  background: $dark-blue;
+  img{
+    &.logo {
+      margin: 30px auto 0;
+      max-width: 200px;
+    }
+  }
+  .seminar-content{
+    margin-top: 30px;
+    h3, p, li {
+      color: $white;
+      font-family: "Gotham-Book", sans-serif;
+    }
+    h3 {
+      margin-bottom: 30px;
+    }
+  }
+  .form-container{
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 30px;
+    input[type="text"],input[type="number"],input[type="email"] {
+      margin: 0 auto;
+    }
+    .form-group {
+      position: relative;
+    }
+  }
+}
+
 section {
   &.header {
     height: 100vh;
@@ -287,6 +319,7 @@ section {
     }
     img {
       max-height: 385px;
+      min-height: 385px;
       object-fit: cover;
       filter: grayscale(100%);
     }
@@ -615,6 +648,10 @@ section {
       max-width: 75%;
       line-height: 4.5rem;
     }
+
+    .detail-img {
+      margin: 20px 0 40px;
+    }
     .course-details {
       h5 {
         margin: 20px 0 5px;
@@ -742,20 +779,20 @@ section {
     }
     .course-image{
       text-align: center;
-      padding-bottom: 60px;
       position: relative;
       overflow: hidden;
       &:after {
         @include triangle-right($green, 150px, -75px);
       }
       img {
-        max-width: 80%;
-        margin: 50px auto;
+        max-width: 100%;
+        margin: 0;
   
       }
       &.placements {
         img {
           margin-top: 0;
+          margin-bottom: 100px;
         }
       }
     }
@@ -1171,7 +1208,7 @@ section {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .banner-form {
     .home-form-container {
       height: auto;
