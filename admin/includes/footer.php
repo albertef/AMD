@@ -8,6 +8,7 @@
     <script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 
 	<script>
 		$("#bloginputDate").datepicker({
@@ -16,6 +17,10 @@
 		$("#newsinputDate").datepicker({
 			dateFormat: "dd/mm/yy"
 		});
+		$("#eventsinputDate").datepicker({
+			dateFormat: "dd/mm/yy"
+		});
+		
 	</script>
 </body>
 </html>

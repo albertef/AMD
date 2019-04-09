@@ -3310,6 +3310,12 @@ section.header {
   top: 15px;
 }
 
+.inner-pages .about-courses p img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .inner-pages .course-list {
   overflow: hidden;
   margin-top: 40px;
@@ -4381,13 +4387,15 @@ section.header {
 
 .inner-pages .inner-right-bar .duration-strip h1 {
   color: #112f4a;
-  font-size: 15rem;
+  font-size: 10rem;
   position: absolute;
   top: 0;
   left: 15px;
   margin: 0;
   line-height: 12rem;
   font-family: "Gotham-Book", sans-serif;
+  min-width: 100px;
+  text-align: right;
 }
 
 .inner-pages .inner-right-bar .duration-strip h2 {
@@ -4396,7 +4404,7 @@ section.header {
   font-family: "Gotham-Black", sans-serif;
   text-transform: uppercase;
   position: absolute;
-  left: 110px;
+  left: 120px;
   top: -10px;
   line-height: 2.5rem;
 }
@@ -4407,7 +4415,7 @@ section.header {
   width: 160px;
   display: inline-block;
   position: absolute;
-  left: 120px;
+  left: 110px;
   text-align: right;
   bottom: 15px;
   font-size: 1.1rem;
@@ -5199,5 +5207,142 @@ section.header {
   .the-edge .edge-left {
     max-height: none;
   }
+}
+
+.admission-page {
+  margin-bottom: 100px;
+}
+
+.admission-page .btn-container .btn {
+  line-height: 15px !important;
+}
+
+.admission-page .btn-container:nth-child(1) .btn {
+  color: #fff;
+  background: #31c1db;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.admission-page .btn-container:nth-child(2) .btn {
+  color: #fff;
+  background: #db4f71;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.admission-page .btn-container:nth-child(3) .btn {
+  color: #112f4a;
+  background: #fff000;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.admission-page .btn-container:nth-child(4) .btn {
+  color: #112f4a;
+  background: #fff000;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.admission-page .more-details {
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.admission-page .more-details h5 {
+  color: #112f4a;
+}
+
+.admission-page .more-details .btn {
+  color: #112f4a;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+  border: 1px solid #112f4a;
+}
+
+.admission-page .admission-page-links {
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.admission-page .not-convinced {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.admission-page .not-convinced h5, .admission-page .not-convinced h6 {
+  color: #112f4a;
+}
+
+.admission-page .not-convinced .btn {
+  color: #fff;
+  background: #112f4a;
+  padding: 15px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+}
+
+.admission-page .admission-form {
+  background: #ECECEC;
+  padding: 50px;
+  margin: 80px 0 0;
+  overflow: hidden;
+}
+
+.admission-page .admission-form h5 {
+  color: #112f4a;
+}
+
+.admission-page .admission-form .form-container {
+  margin: 0;
+  width: auto;
+}
+
+.admission-page .admission-form .form-container input[type="text"], .admission-page .admission-form .form-container input[type="number"], .admission-page .admission-form .form-container input[type="email"] {
+  max-width: 100%;
+}
+
+.admission-page .admission-form .form-container .admission-submit.btn {
+  color: #fff;
+  background: #112f4a;
+  padding: 17px 20px;
+  border-radius: 0;
+  line-height: 1rem;
+  margin-top: 20px;
+  font-family: "Gotham-Medium", sans-serif;
+  border: 0;
+  font-weight: 400 !important;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

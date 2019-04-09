@@ -681,6 +681,13 @@ section {
         top: 15px;
       }
     }
+    p{
+      img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+    }
   }
   .course-list {
     overflow: hidden;
@@ -716,13 +723,15 @@ section {
       min-height: 12rem;
       h1 {
         color: $dark-blue;
-        font-size: 15rem;
+        font-size: 10rem;
         position: absolute;
         top: 0;
         left: 15px;
         margin: 0;
         line-height: 12rem;
         font-family: "Gotham-Book", sans-serif;
+        min-width: 100px;
+        text-align: right;
       }
       h2 {
         color: $dark-blue;
@@ -730,7 +739,7 @@ section {
         font-family: "Gotham-Black", sans-serif;
         text-transform: uppercase;
         position: absolute;
-        left: 110px;
+        left: 120px;
         top: -10px;
         line-height: 2.5rem;
       }
@@ -740,7 +749,7 @@ section {
         width: 160px;
         display: inline-block;
         position: absolute;
-        left: 120px;
+        left: 110px;
         text-align: right;
         bottom: 15px;
         font-size: 1.1rem;
@@ -1326,5 +1335,82 @@ section {
   }
   .the-edge .edge-left {
     max-height: none;
+  }
+}
+
+.admission-page {
+  margin-bottom: 100px;
+  .btn-container {
+    
+    .btn {
+      line-height: 15px !important;
+    }
+    &:nth-child(1){
+      .btn{
+        @include btn($white, $blue, 15px, 20px, 400);
+      }
+    }
+    &:nth-child(2){
+      .btn{
+        @include btn($white, $pink, 15px, 20px, 400);
+      }
+    }
+    &:nth-child(3){
+      .btn{
+        @include btn($dark-blue, $yellow, 15px, 20px, 400);
+      }
+    }
+    &:nth-child(4){
+      .btn{
+        @include btn($dark-blue, $yellow, 15px, 20px, 400);
+      }
+    }
+  }
+  .more-details {
+    overflow: hidden;
+    margin: 50px 0;
+    h5 {
+      color: $dark-blue;
+    }
+    .btn{
+      @include btn($dark-blue, $white, 15px, 20px, 400);
+      border: 1px solid $dark-blue;
+    }
+  }
+  .admission-page-links {
+    overflow: hidden;
+    margin: 50px 0;
+  }
+  .not-convinced {
+    overflow: hidden;
+    margin-top: 50px;
+    h5,h6{
+      color: $dark-blue;
+    }
+    .btn{
+      @include btn($white, $dark-blue, 15px, 20px, 400);
+    }
+  }
+  .admission-form {
+    background: $light-gray;
+    padding: 50px;
+    margin: 80px 0 0;
+    overflow: hidden;
+    h5{
+      color: $dark-blue;
+    }
+    .form-container {
+      margin:0;
+      width: auto;
+      input[type="text"],input[type="number"],input[type="email"]{
+        max-width: 100%;
+      }
+      .admission-submit {
+        &.btn {
+          @include btn($white, $dark-blue, 17px, 20px, 400);
+          width: 100%
+        }
+      }
+    }
   }
 }

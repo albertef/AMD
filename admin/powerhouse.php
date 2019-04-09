@@ -185,6 +185,7 @@
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Designation</th>
+                                <th>Image</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>

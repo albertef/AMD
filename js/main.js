@@ -169,3 +169,25 @@ function seminarValidation() {
     return false;
   }
 }
+
+function admissionValidation() {
+  var nameVal = $('#admissionForm').find('#name').val();
+  var emailVal = $('#admissionForm').find('#email').val();
+
+  if (/^[a-zA-Z ]*$/.test(nameVal) == false) {
+    $('#admissionForm').find('#name').siblings('.courseError').fadeIn().fadeOut(5000);
+    return false;
+  }
+  else if (/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(emailVal) == false) {
+    $('#admissionForm').find('#email').siblings('.courseError').fadeIn().fadeOut(5000);
+    return false;
+  }
+}
+
+function copyText(id) {
+  var copyText = document.getElementById("imageurl-" + id);
+  copyText.select();
+  document.execCommand("copy");
+  $('.copy-btn').text('Copy URL');
+  $('#copy-btn-' + id).text('URL Copied');
+}

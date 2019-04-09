@@ -48,8 +48,6 @@ memento from our Managing Partner Dr Babu Joseph.">
                         <img alt="AMD Launch Event" src="img/gallery/launch/10.jpg"
                         data-image="img/gallery/launch/10.jpg"
                         data-description="AMD Launch Event">
-                        
-                
                 </div>
             </div>
         </div>

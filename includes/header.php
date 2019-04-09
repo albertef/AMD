@@ -12,6 +12,26 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, shrink-to-fit=no">
 
+    <?php
+        if($activePage == "blog-view" && isset($_GET["id"])) {
+            $blog_id = $_GET["id"];
+            $sql = "SELECT * FROM amd_blog where blog_id=".$blog_id;
+            $result = mysqli_query($conn, $sql);
+
+            if (mysqli_num_rows($result) > 0) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    echo '
+                    <meta property="og:url" content="http://www.amd.edu.in/blog-view.php?id='.$row["blog_id"].'" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="'.$row["blog_title"].'" />
+                    <meta property="og:description" content=\''.substr(htmlspecialchars($row["blog_desc"]),5).'\' />
+                    <meta property="og:image" content="http://www.amd.edu.in/img/blog/'.$row["blog_image"].'" />';
+                }
+            } 
+        }
+    ?>
+
+
 	<link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
